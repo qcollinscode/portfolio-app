@@ -1,0 +1,145 @@
+.Home {
+    background-color: white!important;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.Home button {
+    background-color: transparent;
+    border: 2px solid lightgrey;
+    transition: 0.1s ease-in-out;
+}
+
+.Home-Section {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+.jumbotron {
+    position: relative;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    margin-bottom: 0;
+    z-index: 0;
+}
+
+.jumbotron:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../../img/gif2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(15px) brightness(0.5);
+    top: 0;
+    z-index: -1;
+}
+
+.jumbotron > div {
+    padding: 2em 0;
+    text-align: center;
+    color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-top: 0;
+}
+
+.jumbotron .heroText-container h1 {
+    font-size: 7em;
+}
+
+.jumbotron .heroText-container p {
+    font-size: 2em;
+}
+
+.jumbotron .heroText-container .bracket {
+    font-weight: 900;
+}
+
+.jumbotron button {
+    background-color: transparent;
+    border: 3px solid lightgrey;
+    transition: 0.1s ease-in-out;
+}
+
+.jumbotron button:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+    border: 3px solid lightgrey;
+}
+
+.about-section {
+    text-align: center;
+    width: 100;
+    margin-top: -100;
+    background-color: rgba(23, 87, 92, 1);
+    padding: 3em;
+
+}
+
+.about-section .about-section-headtext {
+    font-size: 2.1em;
+    width: 55%;
+    color: lightgrey;
+    margin: 0 auto;
+}
+
+.para01-section {
+    background: url('./../../img/ffc-paraglide.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 30em;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.para01-section:after {
+    content: '';
+    background-color: rgba(23, 87, 92, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    box-shadow: inset 0px 0px 30px 1px black;
+}
+
+section {
+    background-color: white;
+}
+
+.thumbnail {
+    background-color: rgba(23, 87, 92, 1);
+    padding-top: 1em;
+    border: 0em solid rgba(23, 87, 92, 1);
+    border-radius: 1em;
+    box-shadow: 0px 0px 25px 0px black;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumbnail * {
+    color: lightgrey;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail .caption {
+    min-height: 21em;
+}
+
+.thumbnail .caption button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0em 1em 1em 0em;
+}

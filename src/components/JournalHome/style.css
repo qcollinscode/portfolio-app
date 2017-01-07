@@ -1,0 +1,12 @@
+.JournalHome {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.JournalHome-Section {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(23, 87, 92, 1);
+    min-height: 100%;
+}

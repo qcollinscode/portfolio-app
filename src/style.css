@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Azedo;
+    src: url(./fonts/Azedo-Bold.otf);
+}
+
+@font-face {
+    font-family: Magnitude;
+    src: url(./fonts/Magnitude-Regular.otf);
+}
+
+@font-face {
+    font-family: Arkhip;
+    src: url(./fonts/Arkhip_font.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arkhip;
+}
+
+body {
+    background-color: rgba(23, 87, 92, 1);
+}
