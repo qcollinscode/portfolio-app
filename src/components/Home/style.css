@@ -172,6 +172,7 @@ section {
 .tech-section {
     padding: 1em;
     overflow: hidden;
+    min-height: 32em;
 }
 
 .tech-section h1 {
@@ -182,14 +183,38 @@ section {
 
 .tech-section div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    height: 13em;
-    margin-bottom: 2em;
+    min-height: 18em;
+
+
 }
 
 .tech-section img {
-    max-width: 25em;
-    min-height: 100%;
+    max-width: 11em;
+   max-height: 10em;
     display: block;
+}
+
+.slider-container {
+    display:flex;
+}
+
+.slider{
+    display: flex;
+    min-height: 100%;
+}
+
+.carousel .carousel-inner .item {
+    width: 100%;
+}
+
+.carousel .carousel-inner .item section div div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.TechItems2 img {
+    max-height: 12em;
 }

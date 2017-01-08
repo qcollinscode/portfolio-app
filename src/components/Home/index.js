@@ -18,8 +18,34 @@ import nodejs from './../../img/nodejs.svg';
 import express from './../../img/expressjs.svg';
 import postgresql from './../../img/postgresql.svg';
 import mongodb from './../../img/mongodb.svg';
-import html5 from './../../img/html5.svg';
-import css3 from './../../img/css3.svg';
+import atom from './../../img/atom.svg';
+import php from './../../img/php.svg';
+import bootstrap from './../../img/bootstrap.svg';
+import babel from './../../img/babel.svg';
+import digitalocean from './../../img/digitalocean.svg';
+import django from './../../img/django.svg';
+import github from './../../img/github.svg';
+import jquery from './../../img/jquery.svg';
+import laravel from './../../img/laravel.svg';
+import magento from './../../img/magento.svg';
+import mocha from './../../img/mocha.svg';
+import sass from './../../img/sass.svg';
+import redux from './../../img/redux.svg';
+import python from './../../img/python.svg';
+import terminal from './../../img/terminal.svg';
+import ubuntu from './../../img/ubuntu.svg';
+import webpack from './../../img/webpack.svg';
+import woocommerce from './../../img/woocommerce.svg';
+import wordpress from './../../img/wordpress.svg';
+import visualstudio from './../../img/visual-studio.svg';
+import javascript from './../../img/javascript.svg';
+import npm from './../../img/npm.svg';
+import mysql from './../../img/mysql.svg';
+import namecheap from './../../img/namecheap.svg';
+import jekyll from './../../img/jekyll.svg';
+import heroku from './../../img/heroku.svg';
+import gulp from './../../img/gulp.svg';
+import git from './../../img/git.svg';
 
 
 class JumbotronCom extends Component {
@@ -105,28 +131,192 @@ class CardsCom extends Component {
     }
 }
 
-class CardsCom2 extends Component {
+class TechItems1 extends Component {
     render() {
         return (
             <Row componentClass="section">
-                <Col xs={12} md={4} lg={3}>
+                <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={react} alt="242x200"/>
+                        <img src={react}/>
                      </div>   
                 </Col>
-                <Col xs={12} md={4} lg={3}>
+                <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={nodejs} alt="242x200"/>
+                        <img src={nodejs}/>
                      </div>   
                 </Col>
-                <Col xs={12} md={4} lg={3}>
+                <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={express} alt="242x200"/>
+                        <img src={express}/>
                      </div>   
                 </Col>
-                <Col xs={12} md={4} lg={3}>
+                <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={postgresql} alt="242x200"/>
+                        <img src={postgresql}/>
+                    </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={mongodb}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={php}/>
+                     </div>   
+                </Col>
+            </Row>
+        );
+    }
+}
+
+class TechItems2 extends Component {
+    render() {
+        return (
+            <Row componentClass="section" className="TechItems2">
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={magento}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={bootstrap}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={laravel}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={digitalocean}/>
+                    </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={babel}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={github}/>
+                     </div>   
+                </Col>
+            </Row>
+        );
+    }
+}
+
+class TechItems3 extends Component {
+    render() {
+        return (
+            <Row componentClass="section" className="TechItems2">
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={atom}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={jquery}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={mocha}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={sass}/>
+                    </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={redux}/>
+                    </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={python}/>
+                    </div>   
+                </Col>
+            </Row>
+        );
+    }
+}
+class TechItems4 extends Component {
+    render() {
+        return (
+            <Row componentClass="section" className="TechItems2">
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={terminal}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={ubuntu}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={webpack}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={woocommerce}/>
+                    </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={wordpress}/>
+                    </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={git}/>
+                    </div>   
+                </Col>
+            </Row>
+        );
+    }
+}
+class TechItems5 extends Component {
+    render() {
+        return (
+            <Row componentClass="section" className="TechItems2">
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={javascript}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={npm}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={mysql}/>
+                     </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={gulp}/>
+                    </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={jekyll}/>
+                    </div>   
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={2}>
+                    <div>
+                        <img src={heroku}/>
                     </div>   
                 </Col>
             </Row>
@@ -137,23 +327,21 @@ class CardsCom2 extends Component {
 class TechSlide extends Component {
     render() {
         return (
-            <Carousel controls={false}>
-                <Carousel.Item animateOut={false}>
-                    <CardsCom2/>
+            <Carousel indicators={false} controls={false} autoplay={true} interval={1500}>
+                <Carousel.Item animateIn={true} animateOut={true}>
+                    <TechItems1/>
                 </Carousel.Item>
-                <Carousel.Item>
-                <img width={900} height={500} alt="900x500" src="/assets/carousel.png"/>
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
+                <Carousel.Item animateIn={true} animateOut={true}>
+                    <TechItems2/>
                 </Carousel.Item>
-                <Carousel.Item>
-                <img width={900} height={500} alt="900x500" src="/assets/carousel.png"/>
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
+                <Carousel.Item animateIn={true} animateOut={true}>
+                    <TechItems3/>
+                </Carousel.Item>
+                <Carousel.Item animateIn={true} animateOut={true}>
+                    <TechItems4/>
+                </Carousel.Item>
+                <Carousel.Item animateIn={true} animateOut={true}>
+                    <TechItems5/>
                 </Carousel.Item>
             </Carousel>
         );
