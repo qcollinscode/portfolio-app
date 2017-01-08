@@ -1,16 +1,34 @@
 @font-face {
-    font-family: Azedo;
-    src: url(./fonts/Azedo-Bold.otf);
+    font-family: 'Arkhip';
+    src: url('./fonts/arkhip_font-webfont.woff2') format('woff2'),
+         url('./fonts/arkhip_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-@font-face {
-    font-family: Magnitude;
-    src: url(./fonts/Magnitude-Regular.otf);
-}
+
+
 
 @font-face {
-    font-family: Arkhip;
-    src: url(./fonts/Arkhip_font.otf);
+    font-family: 'Azedo';
+    src: url('./fonts/azedo-bold-webfont.woff2') format('woff2'),
+         url('./fonts/azedo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+{
+    html{
+        overflow: hidden;
+        height: 100%;    
+    }
+    body{
+        overflow: auto;
+        height: 100%;
+    }
 }
 
 * {

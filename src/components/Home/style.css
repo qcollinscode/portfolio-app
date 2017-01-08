@@ -11,32 +11,44 @@
     transition: 0.1s ease-in-out;
 }
 
+
 .Home-Section {
     position: absolute;
     width: 100%;
     min-height: 100%;
 }
 
-.jumbotron {
-    position: relative;
+.bg-black {
     height: 100vh;
-    background: black;
+    width: 100%;
+    position: absolute;
+    background-color: black;
     overflow: hidden;
-    margin-bottom: 0;
-    z-index: 0;
 }
 
-.jumbotron:after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.hero-bg {
+    background-color: black;
     background: url('../../img/gif2.gif');
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(15px) brightness(0.5);
-    top: 0;
-    z-index: -1;
+    filter:blur(10px) brightness(0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.svg {
+    position: absolute;
+    background-color: orange;
+    height: 100%;
+}
+
+.jumbotron {
+    position: relative;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    margin-bottom: 0;
+    z-index: 0;
 }
 
 .jumbotron > div {
@@ -82,6 +94,10 @@
 
 }
 
+.section h1 {
+    text-align: center;
+}
+
 .about-section .about-section-headtext {
     font-size: 2.1em;
     width: 55%;
@@ -114,6 +130,15 @@ section {
     background-color: white;
 }
 
+.recentProjects-section {
+    padding-bottom: 3em;
+}
+
+.recentProjects-section h1 {
+    text-align: center;
+    padding: 1em;
+}
+
 .thumbnail {
     background-color: rgba(23, 87, 92, 1);
     padding-top: 1em;
@@ -142,4 +167,29 @@ section {
     bottom: 0;
     right: 0;
     margin: 0em 1em 1em 0em;
+}
+
+.tech-section {
+    padding: 1em;
+    overflow: hidden;
+}
+
+.tech-section h1 {
+    text-align: center;
+    padding: 1em;
+    font-weight: 500;
+}
+
+.tech-section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 13em;
+    margin-bottom: 2em;
+}
+
+.tech-section img {
+    max-width: 25em;
+    min-height: 100%;
+    display: block;
 }
