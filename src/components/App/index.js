@@ -3,9 +3,8 @@
  */
 
 import React, { Component } from 'react';
-import { Navbar, Nav, MenuItem, NavItem, NavDropdown, IndexLinkContainer} from 'react-bootstrap';
-import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
-import { LinkContainer } from 'react-router-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { browserHistory } from 'react-router';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 /**
  * Pages
@@ -14,10 +13,6 @@ import './style.css';
 
 class Navigator extends Component {
     render() {
-        function preventAnchor(e){   
-            e.preventDefault();
-            return false
-        }
         return(
             <Navbar fluid inverse fixedTop collapseOnSelect>
         <Navbar.Header>
@@ -42,8 +37,6 @@ class Navigator extends Component {
         );
     }
 }
-
-const Off = React.createClass
 
 const App = ({ children, location }) => (
     <div className="App">

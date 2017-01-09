@@ -3,7 +3,7 @@
  */
 
 import React, { Component } from 'react';
-import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 /**
  * Pages
@@ -25,7 +25,7 @@ import NotFound from './components/NotFound';
 export default class Routes extends Component {
     render() {
         return (
-            <Router history={ browserHistory }>
+            <Router onUpdate={() => window.scrollTo(0, 0)} history={ browserHistory }>
                 <Route path="/" component={ App }>
                     <IndexRoute component={ Home }/>
                     <Route path="portfolio" component={ PortfolioHome } />
