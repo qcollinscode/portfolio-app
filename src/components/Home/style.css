@@ -109,6 +109,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    background-attachment: fixed;
     height: 30em;
     width: 100%;
 
@@ -140,10 +141,8 @@ section {
 }
 
 .thumbnail {
-
     padding-top: 1em;
     border: 0em solid rgba(23, 87, 92, 1);
-
     padding: 0;
     overflow: hidden;
     position: relative;
@@ -195,8 +194,6 @@ section {
     flex-direction: column;
     justify-content: center;
     min-height: 15em;
-
-
 }
 
 .tech-section img {
@@ -277,7 +274,15 @@ section {
     width: 100%;
     margin: 0;
     color: lightgrey;
-    height: 25em;
+    min-height: 25em;
+}
+
+.Footer-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .Footer-Footer {
@@ -285,15 +290,22 @@ section {
     width: 100%;
     background-color: #113F42;
     margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.3em;
 }
 
 .Resume {
-    height: 10em;
+    height: 15em;
     background: url('./../../img/ocean.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     margin: 0;
+    background-attachment: fixed;
+    overflow: hidden;
     padding: 0;
     background-color: black;
     position: relative;
@@ -301,10 +313,23 @@ section {
 
 .Resume:after {
     position: absolute;
-    background-color: #17575C;
-    opacity: 0.8;
+    background-color: black;
+    opacity: 0.6;
     height: 100%;
     top: 0;
     width: 100%;
     box-shadow: inset 0px 0px 10px 0px black;
+}
+
+.Footer-nav div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Footer-Header-txt-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 }
