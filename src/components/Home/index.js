@@ -8,9 +8,10 @@ import { Grid } from 'react-bootstrap';
 /**
  * Component Imports
  */
-import SkillsSlider from './SkillsSlider';
 import HeroImg from './HeroImg';
 import PrevProjects from './PrevProjects';
+import SkillsSlider from './SkillsSlider';
+import Testimonials from './Testimonials';
 
 /** IMG */
 import './style.css';
@@ -37,8 +38,7 @@ export default class Home extends Component {
                         <h1>Current Skills</h1>
                         <SkillsSlider/>
                     </Grid>
-                    <section className="para01-section">
-                    </section>
+                    <Testimonials/>
                 </section>
             </div>
         );
