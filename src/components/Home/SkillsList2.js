@@ -47,7 +47,7 @@ export default class SkillsList2 extends Component {
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={github} alt="Github"/>
+                        <img className="github" src={github} alt="Github"/>
                      </div>   
                 </Col>
             </Row>

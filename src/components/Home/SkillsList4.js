@@ -42,12 +42,12 @@ export default class SkillsList4 extends Component {
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={wordpress} alt="Wordpress"/>
+                        <img className="wordpress" src={wordpress} alt="Wordpress"/>
                     </div>   
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={git} alt="Git"/>
+                        <img className="git" src={git} alt="Git"/>
                     </div>   
                 </Col>
             </Row>

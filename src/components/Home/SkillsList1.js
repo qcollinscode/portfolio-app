@@ -32,7 +32,7 @@ export default class SkillsList1 extends Component {
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={express} alt="ExpressJS"/>
+                        <img className="expressjs" src={express} alt="ExpressJS"/>
                      </div>   
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>
@@ -42,7 +42,7 @@ export default class SkillsList1 extends Component {
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={mongodb} alt="MongoDB"/>
+                        <img className="mongodb" src={mongodb} alt="MongoDB"/>
                      </div>   
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>

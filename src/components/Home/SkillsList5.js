@@ -38,17 +38,17 @@ export default class SkillsList5 extends Component {
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={gulp} alt="Gulp"/>
+                        <img className="gulp" src={gulp} alt="Gulp"/>
                     </div>   
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={jekyll} alt="Jekyll"/>
+                        <img className="jekyll" src={jekyll} alt="Jekyll"/>
                     </div>   
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={heroku} alt="Heroku"/>
+                        <img className="heroku" src={heroku} alt="Heroku"/>
                     </div>   
                 </Col>
             </Row>

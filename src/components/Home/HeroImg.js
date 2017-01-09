@@ -17,7 +17,7 @@ export default class HeroImg extends Component {
                 <div className="heroText-container container">
                     <h1>Hello, I'm Q</h1>
                     <p>A Full-Stack Web Developer</p>
-                    <p><Button bsStyle="primary">Learn more</Button></p>
+                    <Button bsStyle="primary">Learn more</Button>
                 </div>
             </Jumbotron>
         );

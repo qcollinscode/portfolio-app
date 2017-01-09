@@ -31,7 +31,7 @@ export default class SkillsList3 extends Component {
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>
                     <div>
-                        <img src={jquery} alt="JQuery"/>
+                        <img className="jquery" src={jquery} alt="JQuery"/>
                      </div>   
                 </Col>
                 <Col xs={6} sm={4} md={4} lg={2}>

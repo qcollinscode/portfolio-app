@@ -31,7 +31,6 @@
     background: url('../../img/gif2.gif');
     background-repeat: no-repeat;
     background-size: cover;
-    filter:blur(10px) brightness(0.5);
     height: 100%;
     width: 100%;
 }
@@ -45,7 +44,7 @@
 .HeroImg {
     position: relative;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     overflow: hidden;
     margin-bottom: 0;
     z-index: 0;
@@ -112,7 +111,7 @@
     background-position: bottom;
     height: 30em;
     width: 100%;
-    background-attachment: fixed;
+
     position: relative;
 }
 
@@ -123,7 +122,7 @@
     width: 100%;
     position: absolute;
     top: 0;
-    box-shadow: inset 0px 0px 30px 1px black;
+
 }
 
 section {
@@ -182,12 +181,12 @@ section {
 .tech-section {
     padding: 1em;
     overflow: hidden;
-    min-height: 32em;
+    min-height: 22em;
 }
 
 .tech-section h1 {
     text-align: center;
-    padding: 2em 0em;
+    padding: 1em 0em;
     color: rgba(23, 87, 92, 1);
 }
 
@@ -195,14 +194,14 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 18em;
+    min-height: 15em;
 
 
 }
 
 .tech-section img {
     max-width: 11em;
-   max-height: 10em;
+    max-height: 10em;
     display: block;
 }
 
@@ -225,8 +224,28 @@ section {
     flex-direction: row;
 }
 
+
 .TechItems2 img {
-    max-height: 12em;
+    max-height: 10em;
+    self-align: center;
+}
+
+.expressjs, .github {
+    max-height: 7em!important;
+    position: relative;
+    top:0.8em;
+}
+
+.gulp {
+    max-width: 6em!important;
+}
+
+.mongodb {
+    max-height: 7em!important;
+}
+
+.TechItems2 img:nth-child(2) {
+    max-height: 10em;
 }
 
 .Testimonials {
@@ -243,5 +262,49 @@ section {
     width: 100%;
     position: absolute;
     top: 0;
-    box-shadow: inset 0px 0px 30px 1px black;
+}
+
+.Footer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #17575C;
+}
+
+.Footer-Header {
+    width: 100%;
+    margin: 0;
+    color: lightgrey;
+    height: 25em;
+}
+
+.Footer-Footer {
+    height: 4em;
+    width: 100%;
+    background-color: #113F42;
+    margin: 0;
+}
+
+.Resume {
+    height: 10em;
+    background: url('./../../img/ocean.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: relative;
+}
+
+.Resume:after {
+    position: absolute;
+    background-color: #17575C;
+    opacity: 0.8;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    box-shadow: inset 0px 0px 10px 0px black;
 }
