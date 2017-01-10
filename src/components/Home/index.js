@@ -29,11 +29,11 @@ export default class Home extends Component {
                     <Grid fluid componentClass="section" className="about-section">
                         <p className="about-section-headtext">My name is Q. Collins, and I'm a full stack web developer specializing in web and mobile app development. My goal is to make the web a more accessible and less stressful place for businesses and individuals who need an online presence.</p>
                     </Grid>
-                    <Grid fluid componentClass="section" className="recentProjects-section">
+                    <Grid componentClass="section" className="recentProjects-section">
                         <h1>Recent Web App Projects</h1>
                         <PrevProjects/>
                     </Grid>
-                    <Grid fluid componentClass="section" className="recentProjects-section">
+                    <Grid componentClass="section" className="recentProjects-section">
                         <h1>Recent Mobile App Projects</h1>
                         <PrevProjects/>
                     </Grid>
