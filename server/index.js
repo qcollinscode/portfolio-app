@@ -18,7 +18,7 @@ app.use(express.static(path.resolve(__dirname, '..', 'build')));
  * Return the main index.html always, so react-router render the route in the client
  */
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
 });
 
 var PORT = process.env.PORT || 9000;
