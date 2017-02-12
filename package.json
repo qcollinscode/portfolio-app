@@ -2,7 +2,9 @@
   "name": "DefaultReact",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://qcollinscode.github.io",
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-scripts": "0.8.4"
   },
   "dependencies": {
@@ -29,6 +31,8 @@
     "start": "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "qtest": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
