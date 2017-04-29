@@ -1,0 +1,10 @@
+{
+    "name": "qcollinscode/boilerplate",
+    "authors": [
+        {
+            "name": "qcollins",
+            "email": "qcollins@qraynix.com"
+        }
+    ],
+    "require": {}
+}

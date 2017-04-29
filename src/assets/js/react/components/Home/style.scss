@@ -1,0 +1,174 @@
+.home {
+    background-color: white!important;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.home button, .home button:hover, .home button:active, .home button:focus {
+    background-color: transparent;
+    border: 2px solid rgba(23, 87, 92, 1);;
+    transition: 0.1s ease-in-out;
+}
+
+
+.home-section {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+.bg-black {
+    min-height: 64.5em;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    overflow: hidden;
+}
+
+.hero-bg {
+    background-color: black;
+    background: url('../../img/gif2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.svg {
+    position: absolute;
+    background-color: orange;
+    height: 100%;
+}
+
+.about-section {
+    text-align: center;
+    width: 100%;
+    background: rgba(23, 87, 92, 1);
+    padding: 8em 0em 8em 0em;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.about-section .about-section-headtext {
+    font-size: 2.1em;
+    width: 80%;
+    color: lightgrey;
+    margin: 0 auto;
+}
+
+.para01-section {
+    background: url('./../../img/ffc-paraglide.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 30em;
+    width: 100%;
+    margin-top: 8em;
+    position: relative;
+}
+
+.para01-section:after {
+    content: '';
+    background-color: rgba(23, 87, 92, 0.8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+section {
+    background: white;
+}
+
+.recentProjects-section h1 {
+    text-align: center;
+    padding: 2em 0em;
+    color: rgba(23, 87, 92, 1);
+}
+
+.tech-section {
+    padding: 1em;
+    overflow: hidden;
+}
+
+.tech-section h1 {
+    text-align: center;
+    padding: 1em 0em;
+    color: rgba(23, 87, 92, 1);
+}
+
+.tech-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15em;
+}
+
+.tech-section img {
+    max-width: 11em;
+    max-height: 10em;
+    display: block;
+}
+
+.slider-container {
+    display:flex;
+}
+
+.slider{
+    display: flex;
+    min-height: 100%;
+}
+
+.carousel .carousel-inner .item {
+    width: 100%;
+}
+
+.carousel .carousel-inner .item section div div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.TechItems2 img {
+    max-height: 10em;
+    align-self: center;
+}
+
+.expressjs, .github {
+    max-height: 7em!important;
+    position: relative;
+    top:0.8em;
+}
+
+.gulp {
+    max-width: 6em!important;
+}
+
+.mongodb {
+    max-height: 7em!important;
+}
+
+.TechItems2 img:nth-child(2) {
+    max-height: 10em;
+}
+
+.Testimonials {
+    height: 40em;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.Testimonials:after {
+    content: '';
+    background-color: rgba(23, 87, 92, 1);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}

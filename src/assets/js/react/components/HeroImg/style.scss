@@ -1,0 +1,39 @@
+.heroImg {
+    position: relative;
+    height: 100vh;
+    min-height: 64.5em;
+    background: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    margin-bottom: 0;
+    z-index: 0;
+}
+
+.heroImg > .heroImg-text-container {
+    padding: 2em 0;
+    text-align: center;
+    color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-top: 0;
+}
+
+.heroImg .heroImg-text-container h1 {
+    font-size: 7em;
+}
+
+.heroImg .heroImg-text-container p {
+    font-size: 2em;
+}
+
+.heroImg button {
+    background-color: transparent;
+    border: 3px solid lightgrey;
+    transition: 0.1s ease-in-out;
+}
+
+.heroImg button:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+    border: 3px solid lightgrey;
+}
