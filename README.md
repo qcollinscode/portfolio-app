@@ -1,6 +1,6 @@
 # Project Q
 
-### Live Demo: https://qcollins.herokuapp.com/
+### Live Demo: https://qcollinsportfolio.herokuapp.com/
 
 ## Installation
 
