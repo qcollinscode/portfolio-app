@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
-import { Grid, Button, ButtonToolbar } from 'react-bootstrap';
+import { Grid, Button, ButtonToolbar, Row, Col } from 'react-bootstrap';
 import HeroImg from './../HeroImg';
 import Footer from './../Footer';
 import PrevProjectsMobile from './../PrevProjectsMobile';
 import PrevProjectsWeb from './../PrevProjectsWeb';
 import SkillsSlider from './../SkillsSlider';
-import Testimonials from './../Testimonials';
 
 import './style.scss';
+
+import support from './../../fonts/call-center-worker-with-headset.svg';
+import browser from './../../fonts/browser.svg';
+import computer from './../../fonts/screen.svg';
+import repair from './../../fonts/repairing-browser.svg';
+import responsive from './../../fonts/responsive.svg';
+import shopping from './../../fonts/shopping-cart.svg';
+import smartphone from './../../fonts/smartphone-call.svg';
+import price from './../../fonts/label.svg';
+
+import twitter from './../../fonts/twitter.svg';
+import linkedIn from './../../fonts/linkedin.svg';
+import codepen from './../../fonts/codepen.svg';
 
 export default class Home extends React.Component {
 
@@ -85,8 +97,115 @@ export default class Home extends React.Component {
                         <h1>Current Skills</h1>
                         <SkillsSlider/>
                     </Grid>
-                    <Grid fluid componentClass="section" className="testimonials-section">
-                        <Testimonials/>
+                    <Grid fluid className="services-section">
+                        <h1>Services</h1>
+                        <Row>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={support}></img></div>
+                                    <div className="services-txt">Friendly Support</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={smartphone}></img></div>
+                                    <div className="services-txt">Mobile App Development</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={computer}></img></div>
+                                    <div className="services-txt">Web App Development</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={shopping}></img></div>
+                                    <div className="services-txt">Ecommerce</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={browser}></img></div>
+                                    <div className="services-txt">CMS</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={responsive}></img></div>
+                                    <div className="services-txt">Responsive Development</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={repair}></img></div>
+                                    <div className="services-txt">Website Maintenance</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={price}></img></div>
+                                    <div className="services-txt">Low Cost</div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Grid>
+                    <Grid fluid className="info-Section">
+                        <Row>
+                            <section className="para02-section">
+                                <Col xs={12} sm={12} lg={12}>
+                                    <Row>
+                                        <Col className="social-col" xs={12} sm={6} lg={3}>
+                                            <div className="social-container">
+                                                <div className="social-pic">1200</div>
+                                                <div className="social-txt">Lines of<br/>code</div>
+                                            </div>
+                                        </Col>
+                                        <Col className="social-col" xs={12} sm={6} lg={3}>
+                                            <div className="social-container">
+                                                <div className="social-pic">37</div>
+                                                <div className="social-txt">Projects<br/>Completed</div>
+                                            </div>
+                                        </Col>
+                                        <Col className="social-col" xs={12} sm={6} lg={3}>
+                                            <div className="social-container">
+                                                <div className="social-pic">6948</div>
+                                                <div className="social-txt">Hours of<br/>programming</div>
+                                            </div>
+                                        </Col>
+                                        <Col className="social-col" xs={12} sm={6} lg={3}>
+                                            <div className="social-container">
+                                                <div className="social-pic">2</div>
+                                                <div className="social-txt">Years of<br/>programming</div>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </Col>
+                            </section>
+                        </Row>
+                    </Grid>
+                    <Grid fluid className="social-section">
+                        <h1>Social</h1>
+                        <Row>
+                            <Col className="social-col" xs={12} sm={6} lg={4}>
+                                <div className="social-container">
+                                    <div className="social-pic"><img className="img-responsive" src={twitter}></img></div>
+                                    <div className="social-txt">Twitter</div>
+                                </div>
+                            </Col>
+                            <Col className="social-col" xs={12} sm={6} lg={4}>
+                                <div className="social-container">
+                                    <div className="social-pic"><img className="img-responsive" src={linkedIn}></img></div>
+                                    <div className="social-txt">LinkedIn</div>
+                                </div>
+                            </Col>
+                            <Col className="social-col" xs={12} sm={6} lg={4}>
+                                <div className="social-container">
+                                    <div className="social-pic"><img className="img-responsive" src={codepen}></img></div>
+                                    <div className="social-txt">Codepen</div>
+                                </div>
+                            </Col>
+                        </Row>
                     </Grid>
                     <Grid fluid componentClass="footer">
                         <Footer />

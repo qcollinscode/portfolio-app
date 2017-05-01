@@ -1,77 +1,9 @@
-about me
-
-_________________________________
-
-lines of code, finished projects, hours spent programming, years of programming
-
-121312 ----> 4-5x's
-
-_________________________________
-
-services
-
-friendly support, mobile app development, web app development, ecommerce, cms, responsive development, repair
-_________________________________
-
-___
-| |  ----> 4-5x's
----
-_________________________________
-
-
-connect with me
-
-_________________________________
-
-___
-| |  ----> 4-5x's
----
-_________________________________
-
-
-
-strip of a quote
---------------------------------
-sdfsdfsdfsf ~ sdfsdfsg
--------------------------------
-
-
-strip of past companies worked with
-
-_________________________________
-
-___
-| |  ----> 4-5x's
----
-_________________________________
-
-
-
-
-
 strip of past companies worked with
 
 _________________________________
 
 two boxes, left side solid color with quote and img, rightside is random image, animate left sliding-in and right fading in
 _________________________________
-
-
-
-
-
-
-contact me
-
-_________________________________
-
-___
-| |  ----> 4-5x's
----
-_________________________________
-
-
-
 
 
 Footer
