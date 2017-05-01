@@ -9,12 +9,12 @@ import { Row, Col } from 'react-bootstrap';
  */
 /** SVG */
 
-import yarn from './../../../img/yarn.svg';
-import git from './../../../img/git.svg';
-import npm from './../../../img/npm.svg';
-import mysql from './../../../img/mysql.svg';
-import gulp from './../../../img/gulp.svg';
-import heroku from './../../../img/heroku.svg';
+import yarn from './../../../fonts/yarn.svg';
+import git from './../../../fonts/git.svg';
+import npm from './../../../fonts/npm.svg';
+import mysql from './../../../fonts/mysql.svg';
+import gulp from './../../../fonts/gulp.svg';
+import heroku from './../../../fonts/heroku.svg';
 
 
 export default class SkillsList4 extends Component {

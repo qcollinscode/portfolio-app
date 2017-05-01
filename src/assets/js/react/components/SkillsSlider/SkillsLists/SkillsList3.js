@@ -9,12 +9,12 @@ import { Row, Col } from 'react-bootstrap';
  */
 /** SVG */
 
-import ubuntu from './../../../img/ubuntu.svg';
-import webpack from './../../../img/webpack.svg';
-import terminal from './../../../img/terminal.svg';
-import wordpress from './../../../img/wordpress.svg';
-import git from './../../../img/git.svg';
-import javascript from './../../../img/javascript.svg';
+import ubuntu from './../../../fonts/ubuntu.svg';
+import webpack from './../../../fonts/webpack.svg';
+import terminal from './../../../fonts/terminal.svg';
+import wordpress from './../../../fonts/wordpress.svg';
+import git from './../../../fonts/git.svg';
+import javascript from './../../../fonts/javascript.svg';
 
 
 

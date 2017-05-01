@@ -8,12 +8,12 @@ import { Row, Col } from 'react-bootstrap';
  * SVG Imports
  */
 /** SVG */
-import jekyll from './../../../img/jekyll.svg';
-import babel from './../../../img/babel.svg';
-import github from './../../../img/github.svg';
-import atom from './../../../img/atom.svg';
-import jquery from './../../../img/jquery.svg';
-import sass from './../../../img/sass.svg';
+import jekyll from './../../../fonts/jekyll.svg';
+import babel from './../../../fonts/babel.svg';
+import github from './../../../fonts/github.svg';
+import atom from './../../../fonts/atom.svg';
+import jquery from './../../../fonts/jquery.svg';
+import sass from './../../../fonts/sass.svg';
 
 
 export default class SkillsList2 extends Component {

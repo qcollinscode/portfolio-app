@@ -56,9 +56,13 @@ module.exports = {
                 }
             ]
         },
+        // {
+        //         test: /\.(otf|eot|svg|ttf|woff|woff2)$/,
+        //         loader: 'file-loader?name=../fonts/[name].[ext]'
+        // },
         {
-            test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-            loader: 'url-loader?limit=100000'
+            test: /\.(woff|woff2|eot|ttf|svg|otf)$/,
+            loader: 'url-loader?limit=400000&name=../fonts/[name].[ext]'
         }
       ]
   },

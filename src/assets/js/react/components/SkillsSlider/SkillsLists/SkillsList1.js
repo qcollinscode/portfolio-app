@@ -8,12 +8,12 @@ import { Row, Col } from 'react-bootstrap';
  * SVG Imports
  */
 /** SVG */
-import react from './../../../img/react.svg';
-import nodejs from './../../../img/nodejs.svg';
-import express from './../../../img/expressjs.svg';
-import mongodb from './../../../img/mongodb.svg';
-import php from './../../../img/php.svg';
-import bootstrap from './../../../img/bootstrap.svg';
+import react from './../../../fonts/react.svg';
+import nodejs from './../../../fonts/nodejs.svg';
+import express from './../../../fonts/expressjs.svg';
+import mongodb from './../../../fonts/mongodb.svg';
+import php from './../../../fonts/php.svg';
+import bootstrap from './../../../fonts/bootstrap.svg';
 
 export default class SkillsList1 extends Component {
     render() {

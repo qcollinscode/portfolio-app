@@ -7,24 +7,41 @@
 }
 
 .navbar-nav * {
-    font-family: Magnitude;
+    color: white!important;
+    text-transform: uppercase;
     font-size: 1.18em;
     font-weight: 100;
+    letter-spacing: 0.1em;
+    font-family: "HarabaraMais";
 }
 
-.navbar-nav * {
-    font-family: Arkhip;
-    font-size: 1.18em;
-    font-weight: 100;
+.navbar-nav ul {
+    background: white!important;
+}
+
+.navbar-nav li {
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar-nav li:hover {
+    // box-shadow: inset 0px 0px 10px black;
+    // background: transparent;
+    background: rgba(123, 187, 192, 0.3)!important;
+}
+
+.nav-li-selected {
+    background: rgba(123, 187, 192, 0.3)!important;
 }
 
 .navbar-inverse .navbar-brand {
     color: lightgrey;
-    font-family: Azedo;
     font-size: 2.98em;
-    line-height: .37em;
+    line-height: .52em;
     font-weight: 100;
     cursor: pointer;
+    letter-spacing: 0.05em;
+    font-family: "HarabaraMais";
 }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:active, .navbar-inverse .navbar-brand:focus {

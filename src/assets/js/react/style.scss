@@ -1,19 +1,36 @@
 @font-face {
     font-family: 'Arkhip';
-    src: url('./fonts/arkhip_font-webfont.woff2') format('woff2'),
-         url('./fonts/arkhip_font-webfont.woff') format('woff');
+    src: url('./fonts/Arkhip_font.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'HarabaraMais';
+    src: url('./fonts/HarabaraMais.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Angelina';
+    src: url('./fonts/angelina.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Azedo';
-    src: url('./fonts/azedo-bold-webfont.woff2') format('woff2'),
-         url('./fonts/azedo-bold-webfont.woff') format('woff');
+    src: url('./fonts/Azedo-Light.otf') format('opentype');
+    font-weight: thin;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sketch';
+    src: url('./fonts/Sketch.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)

@@ -7,24 +7,24 @@ import Footer from './../Footer';
 
 import './style.scss';
 
-const App = ({ children, location }) => (
-            <div className="App">
+export default class App extends React.Component {
+    render() {
+        return (
+            <ReactCssTransitionGroup
+            component="div"
+            transitionName="example"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={500}
+            >
+                <div className="App" key={location.pathname}>
                 <Navigation/>
-                <ReactCssTransitionGroup
-                    component="div"
-                    transitionName="example"
-                    transitionEnterTimeout={500}
-                    transitionLeaveTimeout={500}
-                >
-                {React.cloneElement(children, {
-                    key: location.pathname
-                })}
-
-                </ReactCssTransitionGroup>
-            </div>
+                    {this.props.children}
+                </div>
+            </ReactCssTransitionGroup>
         );
+    }
+}
 
     // componentWillUnmount() {
     //     this.serverRequest.abort();
     // }
-export default App;

@@ -7,7 +7,7 @@
 
 .home button, .home button:hover, .home button:active, .home button:focus {
     background-color: transparent;
-    border: 2px solid rgba(23, 87, 92, 1);;
+    border: 2px solid rgba(23, 87, 92, 1);
     transition: 0.1s ease-in-out;
 }
 
@@ -54,10 +54,11 @@
 }
 
 .about-section .about-section-headtext {
-    font-size: 2.1em;
+    font-size: 2.3em;
     width: 80%;
     color: lightgrey;
     margin: 0 auto;
+    font-family: 'Alegreya Sans'!important;
 }
 
 .para01-section {
@@ -66,19 +67,41 @@
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
-    height: 30em;
+    min-height: 13em;
+    max-height: 28em;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: lightgrey;
+    font-family: 'Sketch'!important;
+    font-size: 2.8em;
     margin-top: 8em;
+    padding: 2em 0;
     position: relative;
+    text-align: center;
+    z-index: 100;
 }
 
 .para01-section:after {
     content: '';
-    background-color: rgba(23, 87, 92, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.para01-section > .textbox > p {
+    color: lightgrey;
+    font-size: 1.3em;
+    font-family: 'Sketch'!important;
+}
+
+.para01-section .textbox .arthor {
+    font-size: 0.9em!important;
 }
 
 section {
@@ -88,18 +111,24 @@ section {
 .recentProjects-section h1 {
     text-align: center;
     padding: 2em 0em;
+    font-size: 3.6em;
     color: rgba(23, 87, 92, 1);
+    font-family: 'HarabaraMais'!important;
 }
 
 .tech-section {
-    padding: 1em;
+
+    padding: 0em 0em 6em 0em;
     overflow: hidden;
+
 }
 
 .tech-section h1 {
     text-align: center;
-    padding: 1em 0em;
+    padding: 1em 0em 0.5em 0em;
+    font-size: 3.6em;
     color: rgba(23, 87, 92, 1);
+    font-family: 'HarabaraMais';
 }
 
 .tech-section div {
@@ -155,20 +184,4 @@ section {
 
 .TechItems2 img:nth-child(2) {
     max-height: 10em;
-}
-
-.Testimonials {
-    height: 40em;
-    width: 100%;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.Testimonials:after {
-    content: '';
-    background-color: rgba(23, 87, 92, 1);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
 }
