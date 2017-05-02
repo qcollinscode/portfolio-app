@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import $ from 'jquery';
 import ReactCssTransitionGroup from 'react-addons-css-transition-group';
 
 import './style.scss';
@@ -28,7 +29,6 @@ export default class Navigation extends Component {
                 [elClass]: true
             }
         });
-        console.log(this.state)
 
     }
 
@@ -65,6 +65,48 @@ export default class Navigation extends Component {
                 </Navbar.Collapse>
             </Navbar>
         );
+    }
+
+    componentDidMount() {
+        const self = this;
+
+
+
+        $(window).on('scroll', function() {
+            var y = window.pageYOffset;
+            var scrollPos = 3900;
+            if (y < 1164) {
+                self.setState({
+                    navigation:{
+                        nav01: true
+                    }
+                });
+            } else if(y > 1164 && y < 3435) {
+                self.setState({
+                    navigation:{
+                        nav02: true
+                    }
+                });
+            } else if(y > 3435 && y < 3902) {
+                self.setState({
+                    navigation:{
+                        nav03: true
+                    }
+                });
+            } else if(y > 3902 && y < 5043) {
+                self.setState({
+                    navigation:{
+                        nav04: true
+                    }
+                });
+            } else if(y > 5043) {
+                self.setState({
+                    navigation:{
+                        nav05: true
+                    }
+                });
+            }
+        })
     }
 
 }

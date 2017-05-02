@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Button, ButtonToolbar, Row, Col } from 'react-bootstrap';
+import $ from 'jquery';
 import HeroImg from './../HeroImg';
 import Footer from './../Footer';
 import PrevProjectsMobile from './../PrevProjectsMobile';
@@ -22,6 +23,17 @@ import linkedIn from './../../fonts/linkedin.svg';
 import codepen from './../../fonts/codepen.svg';
 
 export default class Home extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            para02: {
+                lines: 0,
+                projects: 0,
+                hours: 0,
+                years: 0
+            }
+        };
+    }
 
     render() {
         const webProjects = [{
@@ -56,20 +68,22 @@ export default class Home extends React.Component {
                 demo: "https://photogallery01.herokuapp.com/"
             },
             app02: {
-                title: "",
-                tech: "",
-                info: "",
-                github: "",
-                demo: ""
+                title: "Photo Gallery 01",
+                tech: "PHP, SQL, and MySQL",
+                info: "I created a custom backend for a HTML5up template.",
+                github: "https://github.com/qcollinscode/backend-photogallery01",
+                demo: "https://photogallery01.herokuapp.com/"
             },
             app03: {
-                title: "",
-                tech: "",
-                info: "",
-                github: "",
-                demo: ""
+                title: "Photo Gallery 01",
+                tech: "PHP, SQL, and MySQL",
+                info: "I created a custom backend for a HTML5up template.",
+                github: "https://github.com/qcollinscode/backend-photogallery01",
+                demo: "https://photogallery01.herokuapp.com/"
             },
         }];
+
+
         return (
             <div className="home">
                 <section className="home-section">
@@ -81,11 +95,11 @@ export default class Home extends React.Component {
                         <p className="about-section-headtext">My name is Q. Collins, and I'm a full stack web developer specializing in web and mobile app development. My goal is to make the web a more accessible and less stressful place for businesses and individuals who need an online presence. </p>
                     </Grid>
                     <Grid componentClass="section" className="recentProjects-section">
-                        <h1>Web App Projects</h1>
+                        <h1>{"< " + "Web App Projects" + " />"}</h1>
                         <PrevProjectsWeb webProjects={webProjects} />
                     </Grid>
                     <Grid componentClass="section" className="recentProjects-section">
-                        <h1>Mobile App Projects</h1>
+                        <h1>{"< " + "Mobile App Projects" + " />"}</h1>
                         <PrevProjectsMobile mobileProjects={modileProjects}/>
                     </Grid>
                     <section className="para01-section">
@@ -94,11 +108,11 @@ export default class Home extends React.Component {
                         </div>
                     </section>
                     <Grid fluid componentClass="section" className="tech-section">
-                        <h1>Current Skills</h1>
+                        <h1>{"< " + "Current Skills" + " />"}</h1>
                         <SkillsSlider/>
                     </Grid>
                     <Grid fluid className="services-section">
-                        <h1>Services</h1>
+                        <h1>{"< " + "Services" + " />"}</h1>
                         <Row>
                             <Col className="services-col" xs={12} sm={6} lg={3}>
                                 <div className="services-container">
@@ -150,33 +164,33 @@ export default class Home extends React.Component {
                             </Col>
                         </Row>
                     </Grid>
-                    <Grid fluid className="info-Section">
+                    <Grid fluid>
                         <Row>
                             <section className="para02-section">
                                 <Col xs={12} sm={12} lg={12}>
                                     <Row>
-                                        <Col className="social-col" xs={12} sm={6} lg={3}>
-                                            <div className="social-container">
-                                                <div className="social-pic">1200</div>
-                                                <div className="social-txt">Lines of<br/>code</div>
+                                        <Col className="accomp-col" xs={12} sm={6} lg={3}>
+                                            <div className="accomp-container">
+                                                <div className="accomp-num" ref="accompLinesNum">29394</div>
+                                                <div className="accomp-txt">Lines of<br/>code</div>
                                             </div>
                                         </Col>
-                                        <Col className="social-col" xs={12} sm={6} lg={3}>
-                                            <div className="social-container">
-                                                <div className="social-pic">37</div>
-                                                <div className="social-txt">Projects<br/>Completed</div>
+                                        <Col className="accomp-col" xs={12} sm={6} lg={3}>
+                                            <div className="accomp-container">
+                                                <div className="accomp-num" ref="accompProjectsNum">37</div>
+                                                <div className="accomp-txt">Projects<br/>Completed</div>
                                             </div>
                                         </Col>
-                                        <Col className="social-col" xs={12} sm={6} lg={3}>
-                                            <div className="social-container">
-                                                <div className="social-pic">6948</div>
-                                                <div className="social-txt">Hours of<br/>programming</div>
+                                        <Col className="accomp-col" xs={12} sm={6} lg={3}>
+                                            <div className="accomp-container">
+                                                <div className="accomp-num" ref="accompHoursNum">6948</div>
+                                                <div className="accomp-txt">Hours of<br/>programming</div>
                                             </div>
                                         </Col>
-                                        <Col className="social-col" xs={12} sm={6} lg={3}>
-                                            <div className="social-container">
-                                                <div className="social-pic">2</div>
-                                                <div className="social-txt">Years of<br/>programming</div>
+                                        <Col className="accomp-col" xs={12} sm={6} lg={3}>
+                                            <div className="accomp-container">
+                                                <div className="accomp-num" ref="accompYearsNum">2</div>
+                                                <div className="accomp-txt">Years of<br/>programming</div>
                                             </div>
                                         </Col>
                                     </Row>
@@ -185,7 +199,7 @@ export default class Home extends React.Component {
                         </Row>
                     </Grid>
                     <Grid fluid className="social-section">
-                        <h1>Social</h1>
+                        <h1>{"< " + "Social" + " />"}</h1>
                         <Row>
                             <Col className="social-col" xs={12} sm={6} lg={4}>
                                 <div className="social-container">
@@ -213,6 +227,33 @@ export default class Home extends React.Component {
                 </section>
             </div>
         );
+    }
+
+    componentDidMount() {
+        const self = this;
+        const accompArr = [self.refs.accompLinesNum, self.refs.accompProjectsNum, self.refs.accompHoursNum, self.refs.accompYearsNum];
+
+        function animateInfoNums() {
+            var y = window.pageYOffset;
+            // console.log(y)
+            var scrollPos = 3900;
+            if (y > scrollPos) {
+                $(window).off('scroll', animateInfoNums);
+                $(accompArr).each(function() {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 4000,
+                        easing: 'swing',
+                        step: function(now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+            }
+        };
+
+        $(window).on('scroll', animateInfoNums)
     }
 
 }

@@ -54,22 +54,19 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  padding-top: 0; }
+  padding-top: 0;
+  font-family: "HarabaraMais" !important; }
 
 .heroImg .heroImg-text-container h1 {
-  font-size: 8em; }
+  font-size: 8em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase; }
 
 .heroImg .heroImg-text-container p {
   font-size: 3em; }
 
-.heroImg button {
-  background-color: transparent;
-  border: 3px solid lightgrey;
-  transition: 0.1s ease-in-out; }
-
-.heroImg button:hover {
-  background-color: rgba(200, 200, 200, 0.2);
-  border: 3px solid lightgrey; }
+.heroImg .heroImg-text-container button {
+  font-size: 0.6em; }
 .footer {
   width: 100%;
   position: relative;
@@ -122,6 +119,25 @@
   width: 100%;
   box-shadow: inset 0px 0px 10px 0px black; }
 
+.algn-ctr {
+  height: 100%;
+  text-align: center;
+  z-index: 10000; }
+  .algn-ctr .button-container {
+    height: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .algn-ctr .button-container button {
+      background: #17575C;
+      color: white;
+      font-size: 2em;
+      padding: 0em 2.5em;
+      border: none; }
+      .algn-ctr .button-container button:hover {
+        background: #177f7a !important; }
+
 .footer-nav div {
   display: flex;
   justify-content: center;
@@ -154,7 +170,12 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden; }
+
+#card figure:hover {
+  box-shadow: 0px 0px -10px 30px black; }
 
 #card .front {
   background: url(../img/a4e03d2ed3c89326c39a86931ad31bb8.gif);
@@ -394,12 +415,18 @@ section {
   justify-content: center;
   flex-direction: column;
   color: lightgrey;
-  font-family: "Sketch" !important;
   font-size: 2.8em;
   padding: 2em 0;
   position: relative;
   text-align: center;
   z-index: 100; }
+  .para02-section .accomp-num {
+    font-family: "HarabaraMais" !important;
+    font-size: 1.6em; }
+  .para02-section .accomp-txt {
+    font-family: "HarabaraMais" !important;
+    font-size: 0.7em;
+    font-weight: 100; }
 
 .para02-section:after {
   content: '';
@@ -410,14 +437,6 @@ section {
   top: 0;
   left: 0;
   z-index: -1; }
-
-.para02-section > .textbox > p {
-  color: lightgrey;
-  font-size: 1.3em;
-  font-family: "Sketch" !important; }
-
-.para02-section .textbox .arthor {
-  font-size: 0.9em !important; }
 
 .services-section {
   background: #17575c;
@@ -620,8 +639,7 @@ section {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arkhip; }
+  box-sizing: border-box; }
 
 body {
   background-color: #17575c; }
@@ -629,5 +647,14 @@ body {
 .center-col {
   float: none;
   margin: 0 auto; }
+
+button {
+  background: #17575C !important;
+  color: white !important;
+  padding: 0em 2.5em !important;
+  border: none !important;
+  transition: 0.2s ease-in-out !important; }
+  button:hover {
+    background: #177f7a !important; }
 
 /*# sourceMappingURL=bundle.css.map*/

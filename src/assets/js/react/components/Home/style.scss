@@ -217,12 +217,20 @@ section {
     justify-content: center;
     flex-direction: column;
     color: lightgrey;
-    font-family: 'Sketch'!important;
     font-size: 2.8em;
     padding: 2em 0;
     position: relative;
     text-align: center;
     z-index: 100;
+    .accomp-num {
+        font-family: 'HarabaraMais'!important;
+        font-size: 1.6em;
+    }
+    .accomp-txt {
+        font-family: 'HarabaraMais'!important;
+        font-size: 0.7em;
+        font-weight: 100;
+    }
 }
 
 .para02-section:after {
@@ -234,16 +242,6 @@ section {
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-.para02-section > .textbox > p {
-    color: lightgrey;
-    font-size: 1.3em;
-    font-family: 'Sketch'!important;
-}
-
-.para02-section .textbox .arthor {
-    font-size: 0.9em!important;
 }
 
 

@@ -17,23 +17,19 @@
     justify-content: center;
     height: 100%;
     padding-top: 0;
+    font-family: 'HarabaraMais'!important;
 }
 
 .heroImg .heroImg-text-container h1 {
     font-size: 8em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .heroImg .heroImg-text-container p {
     font-size: 3em;
 }
 
-.heroImg button {
-    background-color: transparent;
-    border: 3px solid lightgrey;
-    transition: 0.1s ease-in-out;
-}
-
-.heroImg button:hover {
-    background-color: rgba(200, 200, 200, 0.2);
-    border: 3px solid lightgrey;
+.heroImg .heroImg-text-container button {
+    font-size: 0.6em;
 }

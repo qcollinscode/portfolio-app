@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, Button } from 'react-bootstrap';
 import "./style.scss";
 
 export default class Footer extends Component {
@@ -8,8 +8,10 @@ export default class Footer extends Component {
                 <Row>
                     <div className="footer">
                         <Row className="resume">
-                            <Col lg={12}>
-                                Resume
+                            <Col lg={12} className="algn-ctr">
+                                <div className="button-container">
+                                    <p><Button>Resume</Button></p>
+                                </div>
                             </Col>
                         </Row>
                         <Row className="footer-header">

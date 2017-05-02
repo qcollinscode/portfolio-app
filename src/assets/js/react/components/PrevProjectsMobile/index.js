@@ -43,7 +43,7 @@ export default class PrevProjects extends Component {
 
     renderCardInfo() {
         var arr = [];
-        const obj = this.state.mobileProjects.mobileProjects,
+        const obj = this.state.mobileProjects.mobileProjects[0],
               len = Object.keys(obj).length;
         for(var i = 0; i < len; i++) {
             let objKey = Object.keys(obj)[i];

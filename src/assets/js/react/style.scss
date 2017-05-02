@@ -49,7 +49,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arkhip;
 }
 
 body {
@@ -59,4 +58,15 @@ body {
 .center-col {
     float: none;
     margin: 0 auto;
+}
+
+button {
+    background: #17575C!important;
+    color: white!important;
+    padding: 0em 2.5em!important;
+    border: none!important;
+    transition: 0.2s ease-in-out!important;
+    &:hover {
+        background: rgba(23, 127, 122, 1)!important;
+    }
 }
