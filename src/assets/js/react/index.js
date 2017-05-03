@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Routes from './routes';
+import App from './components/App';
 
 import './style.scss';
 
 ReactDOM.render(
-  <Routes />,
+  <App />,
   document.getElementById('root')
 );

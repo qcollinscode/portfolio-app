@@ -23,7 +23,7 @@ export default class HeroImg extends React.Component {
             $(self.refs.heroImgContainer).animate({
                 opacity: 1
             }, 1100, function() {
-                console.log("animation complete");
+                
             });
         }, 2000);
     }

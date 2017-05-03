@@ -37,7 +37,7 @@
 }
 
 #card .front {
-    background: url('./../../img/gif2.gif');
+    background: url('./../../img/pc.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,20 +60,21 @@
     color: white;
     position: absolute;
     z-index: 10;
-    background: url('./../../img/projectimg5.png');
-    background-size: contain;
+    background: url('./../../img/gif2.gif');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     left: 0;
     color: lightgrey;
     height: 100%;
+    text-align: center;
     top: 0;
     opacity: 1;
     width: 100%;
     transform: rotateY( 180deg );
 }
 
-#card .front .btn1, #card .front .btn2 {
+#card .back .btn1, #card .back .btn2 {
     color: lightgrey;
     border: none;
     background-color: rgba(123, 187, 192, 0.2);
@@ -81,28 +82,30 @@
     font-weight: bold;
 }
 
-#card .front .btn1:hover, #card .front .btn2:hover {
+#card .back .btn1:hover, #card .back .btn2:hover {
     background-color: rgba(23, 87, 92, 0.9);
 }
 
-#card .front:after {
+#card .back:after {
     content: '';
     height: 100%;
     bottom: 0;
+    left: 0;
+    z-index: -1;
     width: 100%;
     background-color: #113F42;
     position: absolute;
     opacity: 0.8;
 }
 
-#card .front .tp {
-    z-index: 2;
+#card .back .tp {
+    z-index: 10;
     padding: 0.5em 1em;
     font-family: 'Alegreya Sans'!important;
 }
 
 
-#card .back:after {
+#card .front:after {
     content: '';
     height: 100%;
     width: 100%;

@@ -111,59 +111,6 @@ export default class Home extends React.Component {
                         <h1>{"< " + "Current Skills" + " />"}</h1>
                         <SkillsSlider/>
                     </Grid>
-                    <Grid fluid className="services-section">
-                        <h1>{"< " + "Services" + " />"}</h1>
-                        <Row>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={support}></img></div>
-                                    <div className="services-txt">Friendly Support</div>
-                                </div>
-                            </Col>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={smartphone}></img></div>
-                                    <div className="services-txt">Mobile App Development</div>
-                                </div>
-                            </Col>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={computer}></img></div>
-                                    <div className="services-txt">Web App Development</div>
-                                </div>
-                            </Col>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={shopping}></img></div>
-                                    <div className="services-txt">Ecommerce</div>
-                                </div>
-                            </Col>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={browser}></img></div>
-                                    <div className="services-txt">CMS</div>
-                                </div>
-                            </Col>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={responsive}></img></div>
-                                    <div className="services-txt">Responsive Development</div>
-                                </div>
-                            </Col>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={repair}></img></div>
-                                    <div className="services-txt">Website Maintenance</div>
-                                </div>
-                            </Col>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={price}></img></div>
-                                    <div className="services-txt">Low Cost</div>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Grid>
                     <Grid fluid>
                         <Row>
                             <section className="para02-section">
@@ -221,6 +168,16 @@ export default class Home extends React.Component {
                             </Col>
                         </Row>
                     </Grid>
+                    <section className="resume">
+                        <Col lg={12} className="algn-ctr">
+                            <div className="button-container">
+                                <p><Button>Resume</Button></p>
+                            </div>
+                        </Col>
+                    </section>
+                    <Grid fluid>
+                        <h1>{"< " + "Contact" + " />"}</h1>
+                    </Grid>
                     <Grid fluid componentClass="footer">
                         <Footer />
                     </Grid>
@@ -235,9 +192,7 @@ export default class Home extends React.Component {
 
         function animateInfoNums() {
             var y = window.pageYOffset;
-            // console.log(y)
-            var scrollPos = 3900;
-            if (y > scrollPos) {
+            if (y > 3250) {
                 $(window).off('scroll', animateInfoNums);
                 $(accompArr).each(function() {
                     $(this).prop('Counter', 0).animate({

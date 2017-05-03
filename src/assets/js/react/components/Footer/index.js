@@ -7,13 +7,6 @@ export default class Footer extends Component {
         return (
                 <Row>
                     <div className="footer">
-                        <Row className="resume">
-                            <Col lg={12} className="algn-ctr">
-                                <div className="button-container">
-                                    <p><Button>Resume</Button></p>
-                                </div>
-                            </Col>
-                        </Row>
                         <Row className="footer-header">
                             <Col sm={12} lg={6} className="footer-header-txt-container">
                                 <div>

@@ -52,13 +52,13 @@ export default class PrevProjects extends Component {
                     <section className="card-container" ref="card-container">
                         <div id="card">
                             <figure href="#" className="figure front" onClick={this.handleFlipCard.bind(this)}>
+                            </figure>
+                            <figure className="figure back">
                                 <h2 className="tp">{obj[objKey].title}</h2>
                                 <h4 className="tp">{obj[objKey].tech}</h4>
                                 <p className="tp">{obj[objKey].info}</p>
                                 <p className="tp"><Button className="btn1" href={obj[objKey].github}>Github&nbsp;<i className="fa fa-github" style={{fontSize:'1.2em'}}></i></Button></p>
                                 <p className="tp"><Button className="btn2" href={obj[objKey].demo}>Demo&nbsp;<i className="fa fa-desktop" style={{fontSize:'1em'}}></i></Button></p>
-                            </figure>
-                            <figure className="figure back">
                             </figure>
                         </div>
                     </section>
