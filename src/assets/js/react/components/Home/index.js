@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Button, ButtonToolbar, Row, Col } from 'react-bootstrap';
+import { Grid, Button, ButtonToolbar, Row, Col, Form, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 import $ from 'jquery';
 import HeroImg from './../HeroImg';
 import Footer from './../Footer';
@@ -95,11 +95,11 @@ export default class Home extends React.Component {
                         <p className="about-section-headtext">My name is Q. Collins, and I'm a full stack web developer specializing in web and mobile app development. My goal is to make the web a more accessible and less stressful place for businesses and individuals who need an online presence. </p>
                     </Grid>
                     <Grid componentClass="section" className="recentProjects-section">
-                        <h1>{"< " + "Web App Projects" + " />"}</h1>
+                        <h1>Web App Projects</h1>
                         <PrevProjectsWeb webProjects={webProjects} />
                     </Grid>
                     <Grid componentClass="section" className="recentProjects-section">
-                        <h1>{"< " + "Mobile App Projects" + " />"}</h1>
+                        <h1>Mobile App Projects</h1>
                         <PrevProjectsMobile mobileProjects={modileProjects}/>
                     </Grid>
                     <section className="para01-section">
@@ -108,7 +108,7 @@ export default class Home extends React.Component {
                         </div>
                     </section>
                     <Grid fluid componentClass="section" className="tech-section">
-                        <h1>{"< " + "Current Skills" + " />"}</h1>
+                        <h1>Current Skills</h1>
                         <SkillsSlider/>
                     </Grid>
                     <Grid fluid>
@@ -145,8 +145,61 @@ export default class Home extends React.Component {
                             </section>
                         </Row>
                     </Grid>
+                    <Grid fluid className="services-section">
+                        <h1>Services</h1>
+                        <Row>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={support}></img></div>
+                                    <div className="services-txt">Friendly Support</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={smartphone}></img></div>
+                                    <div className="services-txt">Mobile App Development</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={computer}></img></div>
+                                    <div className="services-txt">Web App Development</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={shopping}></img></div>
+                                    <div className="services-txt">Ecommerce</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={browser}></img></div>
+                                    <div className="services-txt">CMS</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={responsive}></img></div>
+                                    <div className="services-txt">Responsive Development</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={repair}></img></div>
+                                    <div className="services-txt">Website Maintenance</div>
+                                </div>
+                            </Col>
+                            <Col className="services-col" xs={12} sm={6} lg={3}>
+                                <div className="services-container">
+                                    <div className="services-pic"><img className="img-responsive" src={price}></img></div>
+                                    <div className="services-txt">Low Cost</div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Grid>
                     <Grid fluid className="social-section">
-                        <h1>{"< " + "Social" + " />"}</h1>
+                        <h1>Social</h1>
                         <Row>
                             <Col className="social-col" xs={12} sm={6} lg={4}>
                                 <div className="social-container">
@@ -175,8 +228,43 @@ export default class Home extends React.Component {
                             </div>
                         </Col>
                     </section>
-                    <Grid fluid>
-                        <h1>{"< " + "Contact" + " />"}</h1>
+                    <Grid fluid className="contact-section">
+                        <Row>
+                            <section className="bg">
+                                <h1>Contact</h1>
+                                <Form>
+                                    <Row>
+                                        <Col md={12} lg={4} className="col-lg-offset-2">
+                                            <FormGroup>
+                                                <ControlLabel bsClass="label">Name</ControlLabel>
+                                                {" "}
+                                                <FormControl type="text" placeholder="John Doe"/>
+                                            </FormGroup>
+                                        </Col>
+                                        <Col md={12} lg={4} className="col-lg-offset-0">
+                                            <FormGroup>
+                                                <ControlLabel bsClass="label">Email</ControlLabel>
+                                                {" "}
+                                                <FormControl type="email" placeholder="johndoe@example.com" />
+                                            </FormGroup>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col lg={8} className="col-lg-offset-2">
+                                            <FormGroup>
+                                                <ControlLabel bsClass="label">Message</ControlLabel>
+                                                <FormControl className="textarea" componentClass="textarea" placeholder="Message"/>
+                                            </FormGroup>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col lg={8} className="col-lg-offset-2">
+                                            <Button type="submit" className="btn">Send Message <i className="fa fa-paper-plane" aria-hidden="true"></i></Button>
+                                        </Col>
+                                    </Row>
+                                </Form>
+                            </section>
+                        </Row>
                     </Grid>
                     <Grid fluid componentClass="footer">
                         <Footer />

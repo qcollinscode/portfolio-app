@@ -33,6 +33,13 @@ module.exports = {
             })
         },
         {
+            test: /\.css$/,
+            loader: ExtractTextPlugin.extract({
+                fallback: "style-loader",
+                use: "css-loader",
+            })
+        },
+        {
             test: /\.(jpe?g|png|gif)$/i,
             loaders: [
                 "file-loader?hash=sha512&digest=hex&name=../img/[hash].[ext]",

@@ -79,6 +79,7 @@ export default class Navigation extends Component {
         $(window).on('scroll', function() {
             var y = window.pageYOffset;
             var scrollPos = 3900;
+            console.log(y)
             if (y < 1164) {
                 if(self.refs.nav01) {
                     self.setState({
@@ -103,7 +104,7 @@ export default class Navigation extends Component {
                         }
                     });
                 }
-            } else if(y > 3902 && y < 5043) {
+            } else if(y > 3902 && y < 4388) {
                 if(self.refs.nav04) {
                     self.setState({
                         navigation:{
@@ -111,11 +112,27 @@ export default class Navigation extends Component {
                         }
                     });
                 }
-            } else if(y > 5043) {
+            } else if(y > 4388 && y < 4818) {
                 if(self.refs.nav05) {
                     self.setState({
                         navigation:{
                             nav05: true
+                        }
+                    });
+                }
+            } else if(y > 4788 && y < 5010) {
+                if(self.refs.nav06) {
+                    self.setState({
+                        navigation:{
+                            nav06: true
+                        }
+                    });
+                }
+            } else if(y > 5010) {
+                if(self.refs.nav07) {
+                    self.setState({
+                        navigation:{
+                            nav07: true
                         }
                     });
                 }
