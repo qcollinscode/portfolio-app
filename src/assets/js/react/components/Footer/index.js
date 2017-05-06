@@ -8,27 +8,8 @@ export default class Footer extends Component {
                 <Row>
                     <div className="footer">
                         <Row className="footer-header">
-                            <Col sm={12} lg={6} className="footer-header-txt-container">
-                                <div>
-                                    <h1>Heading</h1>
-                                    <p>Home</p>
-                                    <p>Portfolio</p>
-                                    <p>Journal</p>
-                                    <p>Contact</p>
-                                    <p>Github</p>
-                                    <p>Pricing</p>
-                                </div>
-                            </Col>
-                            <Col sm={12} lg={6} className="footer-header-txt-container">
-                                <div>
-                                    <h1>Heading</h1>
-                                    <p>Home</p>
-                                    <p>Portfolio</p>
-                                    <p>Journal</p>
-                                    <p>Contact</p>
-                                    <p>Github</p>
-                                    <p>Pricing</p>
-                                </div>
+                            <Col sm={12} lg={12} className="footer-header-txt-container">
+                                <div className="email"><h1>qcollins@qraynix.com</h1></div>
                             </Col>
                         </Row>
                         <Row className="footer-footer">

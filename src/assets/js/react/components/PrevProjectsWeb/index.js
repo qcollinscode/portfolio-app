@@ -72,7 +72,7 @@ export default class PrevProjects extends Component {
 
     render() {
         return (
-            <Row componentClass="section">
+            <Row componentClass="section" ref="webprojects1">
                 {this.renderCardInfo()}
             </Row>
         );

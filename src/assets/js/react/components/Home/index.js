@@ -36,6 +36,7 @@ export default class Home extends React.Component {
     }
 
     render() {
+
         const webProjects = [{
             app01: {
                 title: "Photo Gallery Web App",
@@ -82,32 +83,30 @@ export default class Home extends React.Component {
                 demo: "https://photogallery01.herokuapp.com/"
             },
         }];
-
-
         return (
             <div className="home">
-                <section className="home-section">
+                <section className="home-section" id="nav01">
                 <div className="bg-black">
                     <div className="hero-bg"></div>
                 </div>
                 <HeroImg />
                     <Grid fluid componentClass="section" className="about-section">
-                        <p className="about-section-headtext">My name is Q. Collins, and I'm a full stack web developer specializing in web and mobile app development. My goal is to make the web a more accessible and less stressful place for businesses and individuals who need an online presence. </p>
+                        <p className="about-section-headtext" ref="aboutMe">My name is Q. Collins, and I'm a full stack web developer specializing in web and mobile app development. My goal is to make the web a more accessible and less stressful place for businesses and individuals who need an online presence.</p>
                     </Grid>
-                    <Grid componentClass="section" className="recentProjects-section">
+                    <Grid componentClass="section" id="nav02" ref="webprojects" className="recentProjects-section">
                         <h1>Web App Projects</h1>
                         <PrevProjectsWeb webProjects={webProjects} />
                     </Grid>
-                    <Grid componentClass="section" className="recentProjects-section">
+                    <Grid componentClass="section"  id="nav02b" className="recentProjects-section" ref="mobileprojects">
                         <h1>Mobile App Projects</h1>
-                        <PrevProjectsMobile mobileProjects={modileProjects}/>
+                        <PrevProjectsMobile mobileProjects={modileProjects} />
                     </Grid>
                     <section className="para01-section">
-                        <div className="textbox">
+                        <div className="textbox" id="paraTextBox">
                             <p>&#39;&nbsp;Travel as much as you can. As far as you can. As long as you can.<br/>Life’s not meant to be lived in one place. &#39; <br/><span className="arthor">- Traveller</span></p>
                         </div>
                     </section>
-                    <Grid fluid componentClass="section" className="tech-section">
+                    <Grid fluid componentClass="section" id="nav03" className="tech-section">
                         <h1>Current Skills</h1>
                         <SkillsSlider/>
                     </Grid>
@@ -145,7 +144,7 @@ export default class Home extends React.Component {
                             </section>
                         </Row>
                     </Grid>
-                    <Grid fluid className="services-section">
+                    <Grid fluid className="services-section" id="nav04">
                         <h1>Services</h1>
                         <Row>
                             <Col className="services-col" xs={12} sm={6} lg={3}>
@@ -198,7 +197,7 @@ export default class Home extends React.Component {
                             </Col>
                         </Row>
                     </Grid>
-                    <Grid fluid className="social-section">
+                    <Grid fluid className="social-section" id="nav05">
                         <h1>Social</h1>
                         <Row>
                             <Col className="social-col" xs={12} sm={6} lg={4}>
@@ -221,18 +220,18 @@ export default class Home extends React.Component {
                             </Col>
                         </Row>
                     </Grid>
-                    <section className="resume">
+                    <section className="resume" id="nav06">
                         <Col lg={12} className="algn-ctr">
                             <div className="button-container">
                                 <p><Button>Resume</Button></p>
                             </div>
                         </Col>
                     </section>
-                    <Grid fluid className="contact-section">
+                    <Grid fluid className="contact-section" id="nav07">
                         <Row>
                             <section className="bg">
                                 <h1>Contact</h1>
-                                <Form>
+                                <Form className="form">
                                     <Row>
                                         <Col md={12} lg={4} className="col-lg-offset-2">
                                             <FormGroup>
@@ -274,9 +273,33 @@ export default class Home extends React.Component {
         );
     }
 
+
     componentDidMount() {
+
         const self = this;
         const accompArr = [self.refs.accompLinesNum, self.refs.accompProjectsNum, self.refs.accompHoursNum, self.refs.accompYearsNum];
+
+        function animateCSS() {
+            const aboutMe = self.refs.aboutMe;
+            const paraquote = self.refs.paraquote;
+            var y = window.pageYOffset;
+            // console.log(webProjects)
+            console.log(y)
+            if(y < 311) {
+                $(aboutMe).addClass("animated fadeInLeft");
+            } else if (y > 330 && y < 2030) {
+                $("#nav02").addClass("animated fadeInRight");
+            } else if (y > 2150 && y < 3705) {
+                console.log('para')
+                $("#paraTextBox").addClass("animated fadeInLeft");
+            } else if (y > 3705 && y < 4156) {
+                $(".services-container").addClass("animated fadeInRight");
+            } else if (y > 4256 && y < 5000) {
+                $(".social-col").addClass("animated fadeInLeft");
+            } else if (y > 5046) {
+                $(".form").addClass("animated fadeInRight");
+            }
+        }
 
         function animateInfoNums() {
             var y = window.pageYOffset;
@@ -295,7 +318,7 @@ export default class Home extends React.Component {
                 });
             }
         };
-
+        $(window).on('scroll', animateCSS);
         $(window).on('scroll', animateInfoNums)
     }
 

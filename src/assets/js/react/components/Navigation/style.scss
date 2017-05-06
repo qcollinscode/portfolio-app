@@ -35,6 +35,11 @@
     background: rgba(123, 187, 192, 0.3)!important;
 }
 
+a[role="button"],a[role="button"]:focus, a[role="button"]:active {
+    border:0px!important;
+    outline: none!important;
+}
+
 .navbar-inverse .navbar-brand {
     color: lightgrey;
     font-size: 2.98em;

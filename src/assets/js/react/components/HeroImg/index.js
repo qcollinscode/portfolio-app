@@ -22,10 +22,8 @@ export default class HeroImg extends React.Component {
         setTimeout(function() {
             $(self.refs.heroImgContainer).animate({
                 opacity: 1
-            }, 1100, function() {
-                
-            });
-        }, 2000);
+            }, 1100);
+        }, 1000);
     }
 }
 

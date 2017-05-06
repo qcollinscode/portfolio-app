@@ -27,13 +27,86 @@ export default class Navigation extends Component {
         var elClass = e.target.parentElement.classList[0];
         const self = this;
         if(this.refs[elClass]) {
+            const testi = "#" + elClass;
+            console.log($(testi).offset().top - 25);
             this.setState({
                 navigation:{
                     [elClass]: true
                 }
             });
-        }
 
+            $('html, body').animate({
+                scrollTop: $(testi).offset().top - 25
+            }, 1000);
+        }
+        // console.log($("#" + "projects"))
+
+    }
+
+    componentWillMount() {
+        const self = this;
+
+        $(window).on('scroll', function() {
+            var y = window.pageYOffset;
+            var scrollPos = 3900;
+            if (y < 1164) {
+                if(self.refs.nav01) { //home
+                    self.setState({
+                        navigation:{
+                            nav01: true
+                        }
+                    });
+                }
+            } else if(y >= 1194 && y < 3459) { //projects
+                if(self.refs.nav02) {
+                    self.setState({
+                        navigation:{
+                            nav02: true
+                        }
+                    });
+                }
+            } else if(y >= 3459 && y < 4423) { //skills
+                if(self.refs.nav03) {
+                    self.setState({
+                        navigation:{
+                            nav03: true
+                        }
+                    });
+                }
+            } else if(y >= 4423 && y < 5066) { //Services
+                if(self.refs.nav04) {
+                    self.setState({
+                        navigation:{
+                            nav04: true
+                        }
+                    });
+                }
+            } else if(y >= 5066 && y < 5489) { //Social
+                if(self.refs.nav05) {
+                    self.setState({
+                        navigation:{
+                            nav05: true
+                        }
+                    });
+                }
+            } else if(y >= 5489 && y < 5699) { //resume
+                if(self.refs.nav06) {
+                    self.setState({
+                        navigation:{
+                            nav06: true
+                        }
+                    });
+                }
+            } else if(y > 5694) { //contact
+                if(self.refs.nav07) {
+                    self.setState({
+                        navigation:{
+                            nav07: true
+                        }
+                    });
+                }
+            }
+        })
     }
 
     render() {
@@ -71,73 +144,9 @@ export default class Navigation extends Component {
         );
     }
 
-    componentWillMount() {
-        const self = this;
+    componentDidMount() {
 
-
-
-        $(window).on('scroll', function() {
-            var y = window.pageYOffset;
-            var scrollPos = 3900;
-            console.log(y)
-            if (y < 1164) {
-                if(self.refs.nav01) {
-                    self.setState({
-                        navigation:{
-                            nav01: true
-                        }
-                    });
-                }
-            } else if(y > 1164 && y < 3435) {
-                if(self.refs.nav02) {
-                    self.setState({
-                        navigation:{
-                            nav02: true
-                        }
-                    });
-                }
-            } else if(y > 3435 && y < 3902) {
-                if(self.refs.nav03) {
-                    self.setState({
-                        navigation:{
-                            nav03: true
-                        }
-                    });
-                }
-            } else if(y > 3902 && y < 4388) {
-                if(self.refs.nav04) {
-                    self.setState({
-                        navigation:{
-                            nav04: true
-                        }
-                    });
-                }
-            } else if(y > 4388 && y < 4818) {
-                if(self.refs.nav05) {
-                    self.setState({
-                        navigation:{
-                            nav05: true
-                        }
-                    });
-                }
-            } else if(y > 4788 && y < 5010) {
-                if(self.refs.nav06) {
-                    self.setState({
-                        navigation:{
-                            nav06: true
-                        }
-                    });
-                }
-            } else if(y > 5010) {
-                if(self.refs.nav07) {
-                    self.setState({
-                        navigation:{
-                            nav07: true
-                        }
-                    });
-                }
-            }
-        })
     }
+
 
 }

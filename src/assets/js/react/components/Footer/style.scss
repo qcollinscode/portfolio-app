@@ -4,14 +4,13 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background-color: #17575C;
+    background-color: #113F42;
 }
 
 .footer-header {
     width: 100%;
     margin: 0;
     color: lightgrey;
-    min-height: 25em;
 }
 
 .footer-nav {
@@ -25,7 +24,7 @@
 .footer-footer {
     height: 4em;
     width: 100%;
-    background-color: #113F42;
+    background-color: #0a2628;
     margin: 0;
     color: white;
     display: flex;
@@ -40,9 +39,16 @@
     flex-direction: column;
 }
 
-.footer-Header-txt-container {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+.footer-header-txt-container {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .email {
+        padding: 1.5em;
+        font-family: "HarabaraMais"!important;
+        letter-spacing: 0.2em;
+        color: grey;
+        height: 100%!important;
+    }
 }
