@@ -6,10 +6,9 @@ import babel          from   'gulp-babel';
 import autoprefixer   from   'gulp-autoprefixer';
 import concatCSS      from   'gulp-concat-css';
 import concatJS       from   'gulp-concat';
-import connectPHP     from   'gulp-connect-php';
+import nodemon        from   'gulp-nodemon';
 import eslint         from   'gulp-eslint';
 import gulp           from   'gulp';
-import httpProxy      from   'http-proxy';
 import imagemin       from   'gulp-imagemin';
 import install        from   'install';
 import minifyCSS      from   'gulp-clean-css';
@@ -48,16 +47,8 @@ const returnFiles  = (root, files) => {
  * Options
  **************************/
 const
-    connectPHPOptions           =   new Options({ hostname: 'localhost', port: 9000, base: 'src', open: false }),
-    browserSyncServerOptions    =   new Options({ baseDir  : 'src', middleware: (req, res, next) => {
-        const
-            proxy   =   httpProxy.createProxyServer({}),
-            url     = req.url;
-
-            !url.match(/^\/(styles|fonts|bower_components)\//) ? proxy.web(req, res, { target: 'http://127.0.0.1:9000' }) : next();
-        }
-    }),
-    browserSyncOptions          =   new Options({ port: 9001, server: browserSyncServerOptions.options() }),
+    browsersync                 =   browserSync.create(),
+    reload                      =   browserSync.reload,
     gulpBabel                   =   new Options({ presets: 'es2015' }),
     gulpRename                  =   new Options({ fileNameCSS: 'main.css', fileNameJS: 'main.js', baseName: 'main', extName: '.js' }),
     gulpImageMinify             =   new Options({ progressive: true, optimizationLevel: 5 });
@@ -68,17 +59,17 @@ const
 const
     renameFileNameJS            =   gulpRename.options('fileNameJS'),
     mainCssFile                 =   'main.css',
-    imageRoot                   =   './src/assets/img/',
-    jsRoot                      =   './src/assets/js/',
-    cssRoot                     =   './src/assets/css/',
-    cssDevRoot                  =   './src/assets/css/dev/',
-    allImages                   =   './src/assets/img/dev/*.*',
-    allSassFiles                =   './src/assets/css/dev/sass/**/*.scss',
-    allReactFiles               =   './src/assets/js/react/**/*.js',
-    allJSFiles                  =   './src/assets/js/dev/**/*.js',
-    allPHPFiles                 =   './src/**/*.php',
-    devCssDir                   =   './src/assets/css/dev/',
-    devJSDir                    =   './src/assets/js/dev/',
+    imageRoot                   =   './public/img/',
+    jsRoot                      =   './public/js/',
+    cssRoot                     =   './public/css/',
+    cssDevRoot                  =   './public/css/dev/',
+    allImages                   =   './public/img/dev/*.*',
+    allSassFiles                =   './public/css/dev/sass/**/*.scss',
+    allReactFiles               =   './public/js/react/**/*.js',
+    allJSFiles                  =   './public/js/dev/**/*.js',
+    allHtmlFiles                 =   './public/**/*.html',
+    devCssDir                   =   './public/css/dev/',
+    devJSDir                    =   './public/js/dev/',
     jsFiles                  =   returnFiles(devJSDir, ['jquery.js', 'bootstrap.min.js', 'main.es6.js']),
     cssFiles                 =   returnFiles(devCssDir, ['bootstrap.min.css', 'font-awesome.min.css', 'main.css']);
 
@@ -131,17 +122,50 @@ gulp.task('img', () => {
   });
 });
 
-// Browser-sync PHP Server
-gulp.task('connect', () => {
-    connectPHP.server( connectPHPOptions.options() );
-    browserSync( browserSyncOptions.options() );
+// Gulp Nodemon
+gulp.task('nodemon', function(cb) {
+    let started = false;
+
+    return nodemon({
+        script: 'app.js',
+        ignore: [
+            "gulpfile.babel.js",
+            "node_modules/",
+            "public/**/*.js"
+        ],
+        ext: 'js ejs',
+        env: {
+            'NODE_ENV': 'development',
+            'DEBUG': 'appname:*'
+        }
+    }).on('start', function() {
+        if (!started) {
+            cb();
+            started = true;
+        }
+    }).on("restart", function() {
+        setTimeout(function() {
+            console.log('hit');
+            browsersync.reload();
+        }, 1000);
+    });
+});
+
+
+// Browser-sync
+gulp.task('connect', ['nodemon'], () => {
+    browsersync.init(null, {
+        proxy: 'http://localhost:3000',
+        port: "3333",
+        browser: "firefox"
+    });
 });
 
 /***************************
  * Production
  **************************/
 gulp.task('watch', ['connect'], function() {
-    gulp.watch(allPHPFiles).on('change', function () {
+    gulp.watch(allHtmlFiles).on('change', function () {
         browserSync.reload();
     });
     gulp.watch(allReactFiles).on('change', function () {

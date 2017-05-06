@@ -4,11 +4,11 @@ const path = require('path'),
 module.exports = {
     entry: {
         main: [
-             "./src/assets/js/react/index.js",
+             "./react/index.js",
          ]
      },
     output: {
-        path: path.join(__dirname, "src/assets/js"),
+        path: path.join(__dirname, "public/js"),
         filename: "bundle.js"
     },
     devtool: 'source-map',
