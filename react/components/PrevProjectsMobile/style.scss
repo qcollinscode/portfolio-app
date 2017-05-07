@@ -49,8 +49,41 @@
     text-align: center;
     text-decoration: none;
     overflow: hidden;
-    cursor: pointer;
     box-shadow: 0px 0px 50px -25px black;
+    z-index: 4;
+}
+
+#card .front:hover > .fa-info-circle {
+    opacity: 1;
+}
+
+#card .front > .fa-info-circle {
+    z-index: 100000;
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+    right: 0;
+    padding: 0.3em;
+    cursor: pointer;
+}
+
+#card .front:hover:after {
+    opacity: 0.5;
+}
+
+#card .front:after {
+    content: '';
+    transition: 0.2s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #113F42;
+    opacity: 0;
+    z-index: 10;
 }
 
 #card .back {
@@ -69,7 +102,6 @@
     opacity: 1;
     width: 100%;
     transform: rotateY( 180deg );
-    cursor: pointer;
 }
 
 #card .back .btn1, #card .back .btn2 {
@@ -103,14 +135,6 @@
 }
 
 
-#card .front:after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    // background-color: rgba(0, 0, 0, 0.2);
-    z-index: 5;
-}
 
 .flip-card {
     transform: translateX(-100%) rotateY( -180deg );

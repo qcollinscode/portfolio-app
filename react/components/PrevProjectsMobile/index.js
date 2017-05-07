@@ -49,6 +49,7 @@ export default class PrevProjects extends Component {
                     <section className="card-container" ref="card-container">
                         <div id="card">
                             <figure href="#" className="figure front" style={obj[objKey].style} onClick={this.handleFlipCard.bind(this)}>
+                                <i className="fa fa-info-circle" aria-hidden="true"></i>
                             </figure>
                             <figure className="figure back" onClick={this.handleFlipCard.bind(this)}>
                                 <h2 className="tp">{obj[objKey].title}</h2>
