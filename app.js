@@ -28,43 +28,43 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, '/public/views'));
 
 
-/**
-* Database
-*/
+// /**
+// * Database
+// */
 
-    /**
-     * Connection
-     */
-        mongoose.connect('mongodb://127.0.0.1/qcportfolio');
+//     /**
+//      * Connection
+//      */
+//         mongoose.connect('mongodb://127.0.0.1/qcportfolio');
 
-    /**
-     * Schemas
-     */
+//     /**
+//      * Schemas
+//      */
 
-        // Message Schema
-        const messageSchema = new mongoose.Schema({
-            firstname: String,
-            email: String,
-            message: String,
-            date: { type: Date, default: Date.now }
-        });
+//         // Message Schema
+//         const messageSchema = new mongoose.Schema({
+//             firstname: String,
+//             email: String,
+//             message: String,
+//             date: { type: Date, default: Date.now }
+//         });
 
-        // Projects Schema
-        const projectSchema = new mongoose.Schema({
-            title: String,
-            tech: String,
-            description: String,
-            githubLink: String,
-            demoLink: String,
-            image: String,
-            type: String
-        });
+//         // Projects Schema
+//         const projectSchema = new mongoose.Schema({
+//             title: String,
+//             tech: String,
+//             description: String,
+//             githubLink: String,
+//             demoLink: String,
+//             image: String,
+//             type: String
+//         });
 
-    /**
-     * Models
-     */
-     const Message = mongoose.model("Message", messageSchema),
-           Project = mongoose.model("Project", projectSchema);
+//     /**
+//      * Models
+//      */
+//      const Message = mongoose.model("Message", messageSchema),
+//            Project = mongoose.model("Project", projectSchema);
 
 /**
  * Get Routes
