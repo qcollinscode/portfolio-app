@@ -22,22 +22,7 @@ export default class PrevProjects extends Component {
             "mobileProjects": props
         }
     }
-
-    componentWillMount() {
-        // this.setState({
-        //     appProjects:this.props.appProjects[0]
-        // });
-    }
-
-    handleFlipCard(e) {
-        e.preventDefault();
-        if(e.target.classList.contains('front')) {
-            const target = e.target.parentElement.classList;
-            console.log(e.target);
-            target.add('flip-card');
-        }
-    }
-
+    
     renderCardInfo() {
         var arr = [];
         const obj = this.state.mobileProjects.mobileProjects[0],
@@ -48,10 +33,9 @@ export default class PrevProjects extends Component {
                 <Col key={i} xs={12} md={4} lg={4}>
                     <section className="card-container" ref="card-container">
                         <div id="card">
-                            <figure href="#" className="figure front" style={obj[objKey].style} onClick={this.handleFlipCard.bind(this)}>
-                                <i className="fa fa-info-circle" aria-hidden="true"></i>
+                            <figure href="#" className="figure front" style={obj[objKey].style}>
                             </figure>
-                            <figure className="figure back" onClick={this.handleFlipCard.bind(this)}>
+                            <figure className="figure back">
                                 <h2 className="tp">{obj[objKey].title}</h2>
                                 <h4 className="tp">{obj[objKey].tech}</h4>
                                 <p className="tp">{obj[objKey].info}</p>

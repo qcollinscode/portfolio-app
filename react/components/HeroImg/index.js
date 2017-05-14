@@ -9,7 +9,7 @@ export default class HeroImg extends React.Component {
         return (
             <Jumbotron className="heroImg">
                 <div className="heroImg-text-container" ref="heroImgContainer">
-                    <h1> {"< " + "Q Collins" + " />"} </h1>
+                    <h1> Q Collins </h1>
                     <p>Full-Stack Web Developer</p>
                     <p><Button>Learn More</Button></p>
                 </div>
@@ -19,25 +19,10 @@ export default class HeroImg extends React.Component {
     componentDidMount() {
         const self = this;
         $(this.refs.heroImgContainer).css({opacity: 0});
-        setTimeout(function() {
+        setTimeout(() => {
             $(self.refs.heroImgContainer).animate({
                 opacity: 1
             }, 1100);
         }, 1000);
     }
 }
-
-
-// import React, { Component } from 'react';
-// import { Button, ButtonToolbar } from 'react-bootstrap';
-//
-// export default class HeroImg extends React.Component {
-//
-//     render() {
-//         return (
-//             <div>
-//             </div>
-//         );
-//     }
-//
-// }

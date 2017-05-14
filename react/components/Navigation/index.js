@@ -16,8 +16,7 @@ export default class Navigation extends Component {
                 nav03: false,
                 nav04: false,
                 nav05: false,
-                nav06: false,
-                nav07: false
+                nav06: false
             }
         };
     }
@@ -97,14 +96,6 @@ export default class Navigation extends Component {
                         }
                     });
                 }
-            } else if(y > 5694) { //contact
-                if(self.refs.nav07) {
-                    self.setState({
-                        navigation:{
-                            nav07: true
-                        }
-                    });
-                }
             }
         })
     }
@@ -115,8 +106,7 @@ export default class Navigation extends Component {
             isSelected03 = this.state.navigation.nav03 ? "nav03 nav-li-selected" : "nav03",
             isSelected04 = this.state.navigation.nav04 ? "nav04 nav-li-selected" : "nav04",
             isSelected05 = this.state.navigation.nav05 ? "nav05 nav-li-selected" : "nav05",
-            isSelected06 = this.state.navigation.nav06 ? "nav06 nav-li-selected" : "nav06",
-            isSelected07 = this.state.navigation.nav07 ? "nav07 nav-li-selected" : "nav07";
+            isSelected06 = this.state.navigation.nav06 ? "nav06 nav-li-selected" : "nav06";
         return (
             <Navbar fluid inverse fixedTop collapseOnSelect>
                 <div></div>
@@ -133,8 +123,7 @@ export default class Navigation extends Component {
                         <NavItem className={isSelected03} ref="nav03" onClick={this.selectListItem.bind(this)}>Skills</NavItem>
                         <NavItem className={isSelected04} ref="nav04" onClick={this.selectListItem.bind(this)}>Services</NavItem>
                         <NavItem className={isSelected05} ref="nav05" onClick={this.selectListItem.bind(this)}>Social</NavItem>
-                        <NavItem className={isSelected06} ref="nav06" onClick={this.selectListItem.bind(this)}>Resume</NavItem>
-                        <NavItem className={isSelected07} ref="nav07" onClick={this.selectListItem.bind(this)}>Contact</NavItem>
+                        <NavItem className={isSelected06} ref="nav06" onClick={this.selectListItem.bind(this)}>Contact</NavItem>
                     </Nav>
                     <Nav pullRight>
                         <NavItem>Github</NavItem>

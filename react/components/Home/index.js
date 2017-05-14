@@ -25,6 +25,10 @@ import codepen from './../../fonts/codepen.svg';
 import travelingcoders from './../../img/travelingcoders.jpg';
 import birdville from './../../img/birdville.jpeg';
 import jonesty from './../../img/jonesty.jpg';
+import chatapp from './../../img/chatapp.jpg';
+import presidents from './../../img/presidents.png';
+import databaseadmin from './../../img/databaseadmin.jpg';
+import calculator from './../../img/calculator.png';
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -44,7 +48,7 @@ export default class Home extends React.Component {
         const webProjects = [{
             app01: {
                 title: "Traveling Coders",
-                tech: "HTML5, SASS, Javascript, PHP, MySQL, SQL, ReactJS",
+                tech: "HTML5, SASS, Javascript, PHP, MySQL, SQL, and ReactJS",
                 info: "A travel blog",
                 github: "https://github.com/qcollinscode/traveling-coders",
                 demo: "https://travelingcoders.herokuapp.com/",
@@ -57,7 +61,7 @@ export default class Home extends React.Component {
             },
             app02: {
                 title: "Birdsville Web App",
-                tech: "HTML5, SASS, Javascript, MongoDB, Mongoose, EJS, NodeJS, ExpressJS",
+                tech: "HTML5, SASS, Javascript, MongoDB, Mongoose, EJS, NodeJS, and ExpressJS",
                 info: "Wikipedia clone",
                 github: "https://github.com/qcollinscode/birdsville-web-app",
                 demo: "https://birdville.herokuapp.com/",
@@ -70,7 +74,7 @@ export default class Home extends React.Component {
             },
             app03: {
                 title: "Jonesty",
-                tech: "HTML5, SASS, Javascript, EJS, NodeJS, MongoDB, Mongoose, ExpressJS, ReactJS",
+                tech: "HTML5, SASS, Javascript, EJS, NodeJS, MongoDB, Mongoose, ExpressJS, and ReactJS",
                 info: "An ecommerce app",
                 github: "https://github.com/qcollinscode/jonesty-app",
                 demo: "https://jonesty.herokuapp.com/",
@@ -79,41 +83,84 @@ export default class Home extends React.Component {
                     backgroundSize: 'contain!important',
                     backgroundPosition: 'top!important',
                     backgroundRepeat: 'no-repeat!important',
+                },
+            },
+            app04: {
+                title: "Calculator",
+                tech: "HTML5, CSS, and Javascript",
+                info: "Calculator",
+                github: "https://github.com/qcollinscode/calculator",
+                demo: "https://codepen.io/mrcoderon/pen/eByJQE",
+                style: {
+                    backgroundImage: 'url(' + calculator + ')',
+                    backgroundSize: 'contain!important',
+                    backgroundPosition: 'top!important',
+                    backgroundRepeat: 'no-repeat!important',
                 }
             },
+            app05: {
+                title: "Presidents App",
+                tech: "HTML5, CSS, Javascript, ReactJS, NodeJS, and ExpressJS",
+                info: "US presidents information application.",
+                github: "https://github.com/qcollinscode/president-app",
+                demo: "https://reactpresidentwebsite.herokuapp.com/",
+                style: {
+                    backgroundImage: 'url('+ presidents + ')',
+                    backgroundSize: 'contain!important',
+                    backgroundPosition: 'top!important',
+                    backgroundRepeat: 'no-repeat!important',
+                }
+            },
+            app06: {
+                title: "Photo Gallery",
+                tech: "PHP, SQL, and MySQL",
+                info: "Took an HTML5UP template and created a custom backend for it.",
+                github: "https://github.com/qcollinscode/photogallery01",
+                demo: "https://photogallery01.herokuapp.com/",
+                style: {
+                    backgroundImage: 'url(' + databaseadmin + ')',
+                    backgroundSize: 'contain!important',
+                    backgroundPosition: 'top!important',
+                    backgroundRepeat: 'no-repeat!important',
+                }
+            }
+            
         }];
-        const modileProjects = [{
-            app01: {
-                title: "Photo Gallery 01",
-                tech: "PHP, SQL, and MySQL",
-                info: "I created a custom backend for a HTML5up template.",
-                github: "https://github.com/qcollinscode/backend-photogallery01",
-                demo: "https://photogallery01.herokuapp.com/",
-                style: {
-                    backgroundColor: "rgba(23, 87, 92, 1)"
-                }
-            },
-            app02: {
-                title: "Photo Gallery 01",
-                tech: "PHP, SQL, and MySQL",
-                info: "I created a custom backend for a HTML5up template.",
-                github: "https://github.com/qcollinscode/backend-photogallery01",
-                demo: "https://photogallery01.herokuapp.com/",
-                style: {
-                    backgroundColor: "rgba(23, 87, 92, 1)"
-                }
-            },
-            app03: {
-                title: "Photo Gallery 01",
-                tech: "PHP, SQL, and MySQL",
-                info: "I created a custom backend for a HTML5up template.",
-                github: "https://github.com/qcollinscode/backend-photogallery01",
-                demo: "https://photogallery01.herokuapp.com/",
-                style: {
-                    backgroundColor: "rgba(23, 87, 92, 1)"
-                }
-            },
-        }];
+
+        // Mobile Projects
+
+        // const modileProjects = [{
+        //     app01: {
+        //         title: "Photo Gallery 01",
+        //         tech: "PHP, SQL, and MySQL",
+        //         info: "I created a custom backend for a HTML5up template.",
+        //         github: "https://github.com/qcollinscode/backend-photogallery01",
+        //         demo: "https://photogallery01.herokuapp.com/",
+        //         style: {
+        //             backgroundColor: "rgba(23, 87, 92, 1)"
+        //         }
+        //     },
+        //     app02: {
+        //         title: "Photo Gallery 01",
+        //         tech: "PHP, SQL, and MySQL",
+        //         info: "I created a custom backend for a HTML5up template.",
+        //         github: "https://github.com/qcollinscode/backend-photogallery01",
+        //         demo: "https://photogallery01.herokuapp.com/",
+        //         style: {
+        //             backgroundColor: "rgba(23, 87, 92, 1)"
+        //         }
+        //     },
+        //     app03: {
+        //         title: "Photo Gallery 01",
+        //         tech: "PHP, SQL, and MySQL",
+        //         info: "I created a custom backend for a HTML5up template.",
+        //         github: "https://github.com/qcollinscode/backend-photogallery01",
+        //         demo: "https://photogallery01.herokuapp.com/",
+        //         style: {
+        //             backgroundColor: "rgba(23, 87, 92, 1)"
+        //         }
+        //     },
+        // }];
         return (
             <div className="home">
                 <section className="home-section" id="nav01">
@@ -125,13 +172,13 @@ export default class Home extends React.Component {
                         <p className="about-section-headtext" ref="aboutMe">My name is Q. Collins, and I'm a full stack web developer specializing in web and mobile app development. My goal is to make the web a more accessible and less stressful place for businesses and individuals who need an online presence.</p>
                     </Grid>
                     <Grid componentClass="section" id="nav02" ref="webprojects" className="recentProjects-section">
-                        <h1>Web App Projects</h1>
+                        <h1>Projects</h1>
                         <PrevProjectsWeb webProjects={webProjects} />
                     </Grid>
-                    <Grid componentClass="section"  id="nav02b" className="recentProjects-section" ref="mobileprojects">
+                    {/*<Grid componentClass="section" style={{display:'none'}} id="nav02b" className="recentProjects-section" ref="mobileprojects">
                         <h1>Mobile App Projects</h1>
                         <PrevProjectsMobile mobileProjects={modileProjects} />
-                    </Grid>
+                    </Grid>*/}
                     <section className="para01-section">
                         <div className="textbox" id="paraTextBox">
                             <p>&#39;&nbsp;Travel as much as you can. As far as you can. As long as you can.<br/>Life’s not meant to be lived in one place. &#39; <br/><span className="arthor">- Traveller</span></p>
@@ -186,20 +233,8 @@ export default class Home extends React.Component {
                             </Col>
                             <Col className="services-col" xs={12} sm={6} lg={3}>
                                 <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={smartphone}></img></div>
-                                    <div className="services-txt">Mobile App Development</div>
-                                </div>
-                            </Col>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
                                     <div className="services-pic"><img className="img-responsive" src={computer}></img></div>
                                     <div className="services-txt">Web App Development</div>
-                                </div>
-                            </Col>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={shopping}></img></div>
-                                    <div className="services-txt">Ecommerce</div>
                                 </div>
                             </Col>
                             <Col className="services-col" xs={12} sm={6} lg={3}>
@@ -212,18 +247,6 @@ export default class Home extends React.Component {
                                 <div className="services-container">
                                     <div className="services-pic"><img className="img-responsive" src={responsive}></img></div>
                                     <div className="services-txt">Responsive Development</div>
-                                </div>
-                            </Col>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={repair}></img></div>
-                                    <div className="services-txt">Website Maintenance</div>
-                                </div>
-                            </Col>
-                            <Col className="services-col" xs={12} sm={6} lg={3}>
-                                <div className="services-container">
-                                    <div className="services-pic"><img className="img-responsive" src={price}></img></div>
-                                    <div className="services-txt">Low Cost</div>
                                 </div>
                             </Col>
                         </Row>

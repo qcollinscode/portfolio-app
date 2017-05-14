@@ -23,24 +23,6 @@ export default class PrevProjects extends Component {
         }
     }
 
-    componentWillMount(children) {
-        // this.setState({
-        //     appProjects:this.props.appProjects[0]
-        // });
-    }
-
-    handleFlipCard(e) {
-        e.preventDefault();
-        if(e.target.classList.contains('fa-info-circle')) {
-            const target = e.target.parentElement.parentElement.classList;
-            if(target.contains('flip-card')) {
-                target.remove('flip-card');
-            } else {
-                target.add('flip-card');
-            }
-        }
-    }
-
     renderCardInfo() {
         var arr = [];
         const obj = this.state.webProjects.webProjects[0],
@@ -52,8 +34,7 @@ export default class PrevProjects extends Component {
                 <Col key={i} xs={12} md={4} lg={4}>
                     <section className="card-container" ref="card-container">
                         <div id="card">
-                            <figure href="#" className="figure front" style={obj[objKey].style} onClick={this.handleFlipCard.bind(this)}>
-                                <i className="fa fa-info-circle" aria-hidden="true"></i>
+                            <figure href="#" className="figure front" style={obj[objKey].style}>
                             </figure>
                             <figure className="figure back">
                                 <h2 className="tp">{obj[objKey].title}</h2>
