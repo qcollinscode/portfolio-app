@@ -3,7 +3,6 @@ import { Grid, Button, ButtonToolbar, Row, Col, Form, FormGroup, ControlLabel, F
 import $ from 'jquery';
 import HeroImg from './../HeroImg';
 import Footer from './../Footer';
-import PrevProjectsMobile from './../PrevProjectsMobile';
 import PrevProjectsWeb from './../PrevProjectsWeb';
 import SkillsSlider from './../SkillsSlider';
 
@@ -141,10 +140,6 @@ export default class Home extends React.Component {
                         <h1>Projects</h1>
                         <PrevProjectsWeb webProjects={webProjects} />
                     </Grid>
-                    {/*<Grid componentClass="section" style={{display:'none'}} id="nav02b" className="recentProjects-section" ref="mobileprojects">
-                        <h1>Mobile App Projects</h1>
-                        <PrevProjectsMobile mobileProjects={modileProjects} />
-                    </Grid>*/}
                     <section className="para01-section">
                         <div className="textbox" id="paraTextBox">
                             <p>&#39;&nbsp;Travel as much as you can. As far as you can. As long as you can.<br/>Life’s not meant to be lived in one place. &#39; <br/><span className="arthor">- Traveller</span></p>
@@ -250,44 +245,6 @@ export default class Home extends React.Component {
                             </form>
                         </Col>
                     </section>
-                    <Grid fluid className="contact-section" id="nav07">
-                        <Row>
-                            <section className="bg">
-                                <h1>Contact</h1>
-                                <Form className="form">
-                                    <Row>
-                                        <Col md={12} lg={4} className="col-lg-offset-2">
-                                            <FormGroup>
-                                                <ControlLabel bsClass="label">Name</ControlLabel>
-                                                {" "}
-                                                <FormControl type="text" placeholder="John Doe"/>
-                                            </FormGroup>
-                                        </Col>
-                                        <Col md={12} lg={4} className="col-lg-offset-0">
-                                            <FormGroup>
-                                                <ControlLabel bsClass="label">Email</ControlLabel>
-                                                {" "}
-                                                <FormControl type="email" placeholder="johndoe@example.com" />
-                                            </FormGroup>
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col lg={8} className="col-lg-offset-2">
-                                            <FormGroup>
-                                                <ControlLabel bsClass="label">Message</ControlLabel>
-                                                <FormControl className="textarea" componentClass="textarea" placeholder="Message"/>
-                                            </FormGroup>
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col lg={8} className="col-lg-offset-2">
-                                            <Button type="submit" className="regBtn" onClick={(e) => { e.preventDefault()}}>Send Message <i className="fa fa-paper-plane" aria-hidden="true"></i></Button>
-                                        </Col>
-                                    </Row>
-                                </Form>
-                            </section>
-                        </Row>
-                    </Grid>
                     <Grid fluid componentClass="footer">
                         <Footer />
                     </Grid>
