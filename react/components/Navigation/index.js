@@ -112,7 +112,7 @@ export default class Navigation extends Component {
                         <NavItem className={isSelected05} ref="nav05" onClick={this.selectListItem.bind(this)}>Contact</NavItem>
                     </Nav>
                     <Nav pullRight>
-                        <NavItem>Github</NavItem>
+                        <li><a href='https://www.github.com/qcollinscode' target="_blank">Github</a></li>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
