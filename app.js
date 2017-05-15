@@ -2,13 +2,20 @@ const express       = require("express"),
       request       = require("request"),
       bodyParser    = require('body-parser'),
       mongoose      = require('mongoose'),
-      path          = require('path');
+      path          = require('path'),
+      compression   = require('compression');
 
 const app           = express();
 
 const PORT       = process.env.PORT || 3000,
       IP         = process.env.IP;
 
+
+
+/**
+ * Compression
+ */
+app.use(compression())
 
 
 /**
