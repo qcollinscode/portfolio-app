@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import $ from 'jquery';
-import { browserHistory } from 'react-router';
+import { browserHistory, Link } from 'react-router';
 import ReactCssTransitionGroup from 'react-addons-css-transition-group';
 
 import './style.scss';
@@ -88,6 +88,11 @@ export default class Navigation extends Component {
         })
     }
 
+    openInNewTab(url) {
+        const win = window.open(url, '_blank');
+        win.focus();
+    }
+
     render() {
         var isSelected01 = this.state.navigation.nav01 ? "nav01 nav-li-selected" : "nav01",
             isSelected02 = this.state.navigation.nav02 ? "nav02 nav-li-selected" : "nav02",
@@ -112,16 +117,10 @@ export default class Navigation extends Component {
                         <NavItem className={isSelected05} ref="nav05" onClick={this.selectListItem.bind(this)}>Contact</NavItem>
                     </Nav>
                     <Nav pullRight>
-                        <li><a href='https://www.github.com/qcollinscode' target="_blank">Github</a></li>
+                        <NavItem href="https://www.github.com" onClick={this.openInNewTab.bind(this, 'https://www.github.com/qcollinscode')}>Github</NavItem>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
         );
     }
-
-    componentDidMount() {
-
-    }
-
-
 }

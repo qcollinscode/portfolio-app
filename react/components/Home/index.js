@@ -261,7 +261,7 @@ export default class Home extends React.Component {
 
         function animateInfoNums() {
             var y = window.pageYOffset;
-            if (y > 3250) {
+            if (y > 2960) {
                 $(window).off('scroll', animateInfoNums);
                 $(accompArr).each(function() {
                     $(this).prop('Counter', 0).animate({
