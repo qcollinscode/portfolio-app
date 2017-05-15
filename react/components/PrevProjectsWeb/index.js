@@ -29,7 +29,6 @@ export default class PrevProjects extends Component {
               len = Object.keys(obj).length;
         for(var i = 0; i < len; i++) {
             let objKey = Object.keys(obj)[i];
-            console.log(obj[objKey].style)
             arr.push(
                 <Col key={i} xs={12} md={4} lg={4}>
                     <section className="card-container" ref="card-container">

@@ -25,10 +25,10 @@ import codepen from './../../fonts/codepen.svg';
 import travelingcoders from './../../img/travelingcoders.jpg';
 import birdville from './../../img/birdville.jpeg';
 import jonesty from './../../img/jonesty.jpg';
-import chatapp from './../../img/chatapp.jpg';
+import restaurant from './../../img/restaurant.jpg';
 import presidents from './../../img/presidents.png';
 import databaseadmin from './../../img/databaseadmin.jpg';
-import calculator from './../../img/calculator.png';
+import agency from './../../img/agency.jpg';
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -86,26 +86,26 @@ export default class Home extends React.Component {
                 },
             },
             app04: {
-                title: "Calculator",
-                tech: "HTML5, CSS, and Javascript",
-                info: "Calculator",
-                github: "https://github.com/qcollinscode/calculator",
-                demo: "https://codepen.io/mrcoderon/pen/eByJQE",
+                title: "Restaurant",
+                tech: "HTML5, CSS, Javascript, NodeJS, ExpressJS, and EJS",
+                info: "Restaurant web application",
+                github: "https://github.com/qcollinscode/eucada-restaurant",
+                demo: "https://eucada-restaurant.herokuapp.com/",
                 style: {
-                    backgroundImage: 'url(' + calculator + ')',
+                    backgroundImage: 'url(' + restaurant + ')',
                     backgroundSize: 'contain!important',
                     backgroundPosition: 'top!important',
                     backgroundRepeat: 'no-repeat!important',
                 }
             },
             app05: {
-                title: "Presidents App",
-                tech: "HTML5, CSS, Javascript, ReactJS, NodeJS, and ExpressJS",
-                info: "US presidents information application.",
-                github: "https://github.com/qcollinscode/president-app",
-                demo: "https://reactpresidentwebsite.herokuapp.com/",
+                title: "Agency",
+                tech: "HTML5, CSS, Javascript, NodeJS, ExpressJS, and EJS",
+                info: "Agency Web Application",
+                github: "https://github.com/qcollinscode/eucada-agency",
+                demo: "https://eucada-agency.herokuapp.com/",
                 style: {
-                    backgroundImage: 'url('+ presidents + ')',
+                    backgroundImage: 'url('+ agency + ')',
                     backgroundSize: 'contain!important',
                     backgroundPosition: 'top!important',
                     backgroundRepeat: 'no-repeat!important',
@@ -127,40 +127,6 @@ export default class Home extends React.Component {
             
         }];
 
-        // Mobile Projects
-
-        // const modileProjects = [{
-        //     app01: {
-        //         title: "Photo Gallery 01",
-        //         tech: "PHP, SQL, and MySQL",
-        //         info: "I created a custom backend for a HTML5up template.",
-        //         github: "https://github.com/qcollinscode/backend-photogallery01",
-        //         demo: "https://photogallery01.herokuapp.com/",
-        //         style: {
-        //             backgroundColor: "rgba(23, 87, 92, 1)"
-        //         }
-        //     },
-        //     app02: {
-        //         title: "Photo Gallery 01",
-        //         tech: "PHP, SQL, and MySQL",
-        //         info: "I created a custom backend for a HTML5up template.",
-        //         github: "https://github.com/qcollinscode/backend-photogallery01",
-        //         demo: "https://photogallery01.herokuapp.com/",
-        //         style: {
-        //             backgroundColor: "rgba(23, 87, 92, 1)"
-        //         }
-        //     },
-        //     app03: {
-        //         title: "Photo Gallery 01",
-        //         tech: "PHP, SQL, and MySQL",
-        //         info: "I created a custom backend for a HTML5up template.",
-        //         github: "https://github.com/qcollinscode/backend-photogallery01",
-        //         demo: "https://photogallery01.herokuapp.com/",
-        //         style: {
-        //             backgroundColor: "rgba(23, 87, 92, 1)"
-        //         }
-        //     },
-        // }];
         return (
             <div className="home">
                 <section className="home-section" id="nav01">
@@ -169,7 +135,7 @@ export default class Home extends React.Component {
                 </div>
                 <HeroImg />
                     <Grid fluid componentClass="section" className="about-section">
-                        <p className="about-section-headtext" ref="aboutMe">My name is Q. Collins, and I'm a full stack web developer specializing in web and mobile app development. My goal is to make the web a more accessible and less stressful place for businesses and individuals who need an online presence.</p>
+                        <p className="about-section-headtext" ref="aboutMe">Hi, my name is Quarterious Collins, and I'm a web developer. When I'm not fishing or gaming, I'm creating cool things on the internet. My passion is making the web a more accessible and faster place for businesses and individuals who need an online presence. I'm available for freelance work. If you'd like to get in touch, you can email me at <a href="mailto:contact@qcollinscode.com" target="_top">contact@qcollinscode.com</a></p>
                     </Grid>
                     <Grid componentClass="section" id="nav02" ref="webprojects" className="recentProjects-section">
                         <h1>Projects</h1>
@@ -196,25 +162,25 @@ export default class Home extends React.Component {
                                         <Col className="accomp-col" xs={12} sm={6} lg={3}>
                                             <div className="accomp-container">
                                                 <div className="accomp-num" ref="accompLinesNum">29394</div>
-                                                <div className="accomp-txt">Lines of<br/>code</div>
+                                                <p className="accomp-txt">+ Lines of Code</p>
                                             </div>
                                         </Col>
                                         <Col className="accomp-col" xs={12} sm={6} lg={3}>
                                             <div className="accomp-container">
                                                 <div className="accomp-num" ref="accompProjectsNum">37</div>
-                                                <div className="accomp-txt">Projects<br/>Completed</div>
+                                                <p className="accomp-txt">+ Projects</p>
                                             </div>
                                         </Col>
                                         <Col className="accomp-col" xs={12} sm={6} lg={3}>
                                             <div className="accomp-container">
                                                 <div className="accomp-num" ref="accompHoursNum">6948</div>
-                                                <div className="accomp-txt">Hours of<br/>programming</div>
+                                                <p className="accomp-txt">+ Hours Programming</p>
                                             </div>
                                         </Col>
                                         <Col className="accomp-col" xs={12} sm={6} lg={3}>
                                             <div className="accomp-container">
                                                 <div className="accomp-num" ref="accompYearsNum">2</div>
-                                                <div className="accomp-txt">Years of<br/>programming</div>
+                                                <p className="accomp-txt">+ Years Programming</p>
                                             </div>
                                         </Col>
                                     </Row>
@@ -258,27 +224,30 @@ export default class Home extends React.Component {
                                 <div className="social-container">
                                     <div className="social-pic"><img className="img-responsive" src={twitter}></img></div>
                                     <div className="social-txt">Twitter</div>
+                                    <a href="https://twitter.com/qcollinscode" target="_blank"></a>
                                 </div>
                             </Col>
                             <Col className="social-col" xs={12} sm={6} lg={4}>
                                 <div className="social-container">
                                     <div className="social-pic"><img className="img-responsive" src={linkedIn}></img></div>
                                     <div className="social-txt">LinkedIn</div>
+                                    <a href="#" target="_blank"></a>
                                 </div>
                             </Col>
                             <Col className="social-col" xs={12} sm={6} lg={4}>
                                 <div className="social-container">
                                     <div className="social-pic"><img className="img-responsive" src={codepen}></img></div>
                                     <div className="social-txt">Codepen</div>
+                                    <a href="https://codepen.io/qcollinscode" target="_blank"></a>
                                 </div>
                             </Col>
                         </Row>
                     </Grid>
                     <section className="resume" id="nav06">
                         <Col lg={12} className="algn-ctr">
-                            <div className="button-container">
-                                <p><Button>Resume</Button></p>
-                            </div>
+                            <form method="get" action="Resume.pdf" target="_blank" className="button-container">
+                                <p><Button className="regBtn" type="submit">Resume</Button></p>
+                            </form>
                         </Col>
                     </section>
                     <Grid fluid className="contact-section" id="nav07">
@@ -312,7 +281,7 @@ export default class Home extends React.Component {
                                     </Row>
                                     <Row>
                                         <Col lg={8} className="col-lg-offset-2">
-                                            <Button type="submit" className="btn">Send Message <i className="fa fa-paper-plane" aria-hidden="true"></i></Button>
+                                            <Button type="submit" className="regBtn" onClick={(e) => { e.preventDefault()}}>Send Message <i className="fa fa-paper-plane" aria-hidden="true"></i></Button>
                                         </Col>
                                     </Row>
                                 </Form>
@@ -333,26 +302,6 @@ export default class Home extends React.Component {
         const self = this;
         const accompArr = [self.refs.accompLinesNum, self.refs.accompProjectsNum, self.refs.accompHoursNum, self.refs.accompYearsNum];
 
-        function animateCSS() {
-            const aboutMe = self.refs.aboutMe;
-            const paraquote = self.refs.paraquote;
-            var y = window.pageYOffset;
-            if(y < 311) {
-                $(aboutMe).addClass("animated fadeInLeft");
-            } else if (y > 330 && y < 2030) {
-                $("#nav02").addClass("animated fadeInRight");
-            } else if (y > 2150 && y < 3705) {
-                console.log('para')
-                $("#paraTextBox").addClass("animated fadeInLeft");
-            } else if (y > 3705 && y < 4156) {
-                $(".services-container").addClass("animated fadeInRight");
-            } else if (y > 4256 && y < 5000) {
-                $(".social-col").addClass("animated fadeInLeft");
-            } else if (y > 5046) {
-                $(".form").addClass("animated fadeInRight");
-            }
-        }
-
         function animateInfoNums() {
             var y = window.pageYOffset;
             if (y > 3250) {
@@ -370,7 +319,6 @@ export default class Home extends React.Component {
                 });
             }
         };
-        $(window).on('scroll', animateCSS);
         $(window).on('scroll', animateInfoNums)
     }
 

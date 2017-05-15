@@ -5,13 +5,20 @@ import $ from 'jquery';
 import './style.scss';
 
 export default class HeroImg extends React.Component {
+
+    onButtonClick(e) {
+        $('html, body').animate({
+            scrollTop: $(".about-section").offset().top - 25
+        }, 1000);
+    }
+
     render() {
         return (
             <Jumbotron className="heroImg">
                 <div className="heroImg-text-container" ref="heroImgContainer">
                     <h1> Q Collins </h1>
-                    <p>Full-Stack Web Developer</p>
-                    <p><Button>Learn More</Button></p>
+                    <p>Web Developer</p>
+                    <p><Button className="regBtn" onClick={this.onButtonClick.bind(this)}>Learn More</Button></p>
                 </div>
             </Jumbotron>
         );

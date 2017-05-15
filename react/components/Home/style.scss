@@ -1,3 +1,9 @@
+@mixin bp-small {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
 .home {
     background-color: white!important;
     min-height: 100%;
@@ -31,6 +37,7 @@
     background-color: black;
     background: url('../../img/gif2.gif');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -76,6 +83,9 @@
     color: lightgrey;
     font-family: 'Sketch'!important;
     font-size: 2.8em;
+    @include bp-small {
+        font-size: 2.1em;
+    }
     margin-top: 8em;
     padding: 2em 0;
     position: relative;
@@ -223,14 +233,19 @@ section {
     position: relative;
     text-align: center;
     z-index: 100;
-    .accomp-num {
-        font-family: 'HarabaraMais'!important;
-        font-size: 1.6em;
-    }
-    .accomp-txt {
-        font-family: 'HarabaraMais'!important;
-        font-size: 0.7em;
-        font-weight: 100;
+    .accomp-container {
+        padding: 0.8em 0;
+        .accomp-num {
+            font-family: 'HarabaraMais'!important;
+            font-size: 1.6em;
+            color:rgba(53, 117, 122, 1);
+        }
+        .accomp-txt {
+            font-family: 'HarabaraMais'!important;
+            font-size: 0.7em;
+            font-weight: 100;
+            white-space: nowrap;
+        }
     }
 }
 
@@ -366,9 +381,14 @@ section {
     .social-container {
         text-align: center;
         margin-bottom: 6em;
-        .social-pic {
-
-        }
+        position: relative;
+         a {
+             display: block;
+             height: 100%;
+             top: 0;
+             width: 100%;
+             position: absolute;
+         }
         .social-txt {
             color: rgba(23, 87, 92, 1);
         }
@@ -408,8 +428,7 @@ section {
         flex-direction: column;
         justify-content: center;
         button {
-            background: #17575C;
-            color: white;
+            font-family: 'HarabaraMais', arial;
             font-size: 2em;
             padding: 0em 2.5em;
             border: none;
@@ -452,13 +471,13 @@ section {
     form {
         padding: 10px 0 90px 0!important;
         outline-color: orange!important;
+        font-family: 'HarabaraMais';
         .form-control {
             border: none!important;
             background: rgba(03, 67, 72, 1);
             color: lightgrey;
             box-shadow: none;
             border-bottom: 1px solid lightgrey;
-            border-radius: 5px;
             padding: 8px 9px;
         }
     }
@@ -467,6 +486,7 @@ section {
         margin-top: 0.5em;
         font-weight: 100!important;
         font-family: 'HarabaraMais';
+        font-size: 1.4em;
         background: rgba(03, 67, 72, 1)!important;
         &:hover {
             background: rgba(23, 127, 122, 1)!important;
@@ -475,7 +495,7 @@ section {
     .label {
         color: lightgrey;
         padding: 0em 0em 0em 0em;
-        font-size: 1.2em;
+        font-size: 1.4em;
         font-weight: 100!important;
         letter-spacing: 0.1em;
         font-family: 'HarabaraMais';
@@ -488,8 +508,14 @@ section {
         resize: none;
     }
 
+    input[type="text"], input[type="email"] {
+        height: 2.5em;
+    }
+
     input[type="text"], input[type="email"], textarea {
         transition: 0.2s ease-in-out;
+        font-size: 1.2em;
+        border-radius: 0!important;
     }
 
     textarea:focus,

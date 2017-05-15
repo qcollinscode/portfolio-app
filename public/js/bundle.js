@@ -22307,7 +22307,7 @@ var Footer = function (_Component) {
                                 _react2.default.createElement(
                                     'h1',
                                     null,
-                                    'qcollins@qraynix.com'
+                                    'contact@qcollinscode.com'
                                 )
                             )
                         )
@@ -22432,9 +22432,9 @@ var _jonesty = __webpack_require__(344);
 
 var _jonesty2 = _interopRequireDefault(_jonesty);
 
-var _chatapp = __webpack_require__(342);
+var _restaurant = __webpack_require__(603);
 
-var _chatapp2 = _interopRequireDefault(_chatapp);
+var _restaurant2 = _interopRequireDefault(_restaurant);
 
 var _presidents = __webpack_require__(345);
 
@@ -22444,9 +22444,9 @@ var _databaseadmin = __webpack_require__(343);
 
 var _databaseadmin2 = _interopRequireDefault(_databaseadmin);
 
-var _calculator = __webpack_require__(341);
+var _agency = __webpack_require__(602);
 
-var _calculator2 = _interopRequireDefault(_calculator);
+var _agency2 = _interopRequireDefault(_agency);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22520,26 +22520,26 @@ var Home = function (_React$Component) {
                     }
                 },
                 app04: {
-                    title: "Calculator",
-                    tech: "HTML5, CSS, and Javascript",
-                    info: "Calculator",
-                    github: "https://github.com/qcollinscode/calculator",
-                    demo: "https://codepen.io/mrcoderon/pen/eByJQE",
+                    title: "Restaurant",
+                    tech: "HTML5, CSS, Javascript, NodeJS, ExpressJS, and EJS",
+                    info: "Restaurant web application",
+                    github: "https://github.com/qcollinscode/eucada-restaurant",
+                    demo: "https://eucada-restaurant.herokuapp.com/",
                     style: {
-                        backgroundImage: 'url(' + _calculator2.default + ')',
+                        backgroundImage: 'url(' + _restaurant2.default + ')',
                         backgroundSize: 'contain!important',
                         backgroundPosition: 'top!important',
                         backgroundRepeat: 'no-repeat!important'
                     }
                 },
                 app05: {
-                    title: "Presidents App",
-                    tech: "HTML5, CSS, Javascript, ReactJS, NodeJS, and ExpressJS",
-                    info: "US presidents information application.",
-                    github: "https://github.com/qcollinscode/president-app",
-                    demo: "https://reactpresidentwebsite.herokuapp.com/",
+                    title: "Agency",
+                    tech: "HTML5, CSS, Javascript, NodeJS, ExpressJS, and EJS",
+                    info: "Agency Web Application",
+                    github: "https://github.com/qcollinscode/eucada-agency",
+                    demo: "https://eucada-agency.herokuapp.com/",
                     style: {
-                        backgroundImage: 'url(' + _presidents2.default + ')',
+                        backgroundImage: 'url(' + _agency2.default + ')',
                         backgroundSize: 'contain!important',
                         backgroundPosition: 'top!important',
                         backgroundRepeat: 'no-repeat!important'
@@ -22561,40 +22561,6 @@ var Home = function (_React$Component) {
 
             }];
 
-            // Mobile Projects
-
-            // const modileProjects = [{
-            //     app01: {
-            //         title: "Photo Gallery 01",
-            //         tech: "PHP, SQL, and MySQL",
-            //         info: "I created a custom backend for a HTML5up template.",
-            //         github: "https://github.com/qcollinscode/backend-photogallery01",
-            //         demo: "https://photogallery01.herokuapp.com/",
-            //         style: {
-            //             backgroundColor: "rgba(23, 87, 92, 1)"
-            //         }
-            //     },
-            //     app02: {
-            //         title: "Photo Gallery 01",
-            //         tech: "PHP, SQL, and MySQL",
-            //         info: "I created a custom backend for a HTML5up template.",
-            //         github: "https://github.com/qcollinscode/backend-photogallery01",
-            //         demo: "https://photogallery01.herokuapp.com/",
-            //         style: {
-            //             backgroundColor: "rgba(23, 87, 92, 1)"
-            //         }
-            //     },
-            //     app03: {
-            //         title: "Photo Gallery 01",
-            //         tech: "PHP, SQL, and MySQL",
-            //         info: "I created a custom backend for a HTML5up template.",
-            //         github: "https://github.com/qcollinscode/backend-photogallery01",
-            //         demo: "https://photogallery01.herokuapp.com/",
-            //         style: {
-            //             backgroundColor: "rgba(23, 87, 92, 1)"
-            //         }
-            //     },
-            // }];
             return _react2.default.createElement(
                 'div',
                 { className: 'home' },
@@ -22613,7 +22579,12 @@ var Home = function (_React$Component) {
                         _react2.default.createElement(
                             'p',
                             { className: 'about-section-headtext', ref: 'aboutMe' },
-                            'My name is Q. Collins, and I\'m a full stack web developer specializing in web and mobile app development. My goal is to make the web a more accessible and less stressful place for businesses and individuals who need an online presence.'
+                            'Hi, my name is Quarterious Collins, and I\'m a web developer. When I\'m not fishing or gaming, I\'m creating cool things on the internet. My passion is making the web a more accessible and faster place for businesses and individuals who need an online presence. I\'m available for freelance work. If you\'d like to get in touch, you can email me at ',
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'mailto:contact@qcollinscode.com', target: '_top' },
+                                'contact@qcollinscode.com'
+                            )
                         )
                     ),
                     _react2.default.createElement(
@@ -22684,11 +22655,9 @@ var Home = function (_React$Component) {
                                                     '29394'
                                                 ),
                                                 _react2.default.createElement(
-                                                    'div',
+                                                    'p',
                                                     { className: 'accomp-txt' },
-                                                    'Lines of',
-                                                    _react2.default.createElement('br', null),
-                                                    'code'
+                                                    '+ Lines of Code'
                                                 )
                                             )
                                         ),
@@ -22704,11 +22673,9 @@ var Home = function (_React$Component) {
                                                     '37'
                                                 ),
                                                 _react2.default.createElement(
-                                                    'div',
+                                                    'p',
                                                     { className: 'accomp-txt' },
-                                                    'Projects',
-                                                    _react2.default.createElement('br', null),
-                                                    'Completed'
+                                                    '+ Projects'
                                                 )
                                             )
                                         ),
@@ -22724,11 +22691,9 @@ var Home = function (_React$Component) {
                                                     '6948'
                                                 ),
                                                 _react2.default.createElement(
-                                                    'div',
+                                                    'p',
                                                     { className: 'accomp-txt' },
-                                                    'Hours of',
-                                                    _react2.default.createElement('br', null),
-                                                    'programming'
+                                                    '+ Hours Programming'
                                                 )
                                             )
                                         ),
@@ -22744,11 +22709,9 @@ var Home = function (_React$Component) {
                                                     '2'
                                                 ),
                                                 _react2.default.createElement(
-                                                    'div',
+                                                    'p',
                                                     { className: 'accomp-txt' },
-                                                    'Years of',
-                                                    _react2.default.createElement('br', null),
-                                                    'programming'
+                                                    '+ Years Programming'
                                                 )
                                             )
                                         )
@@ -22868,7 +22831,8 @@ var Home = function (_React$Component) {
                                         'div',
                                         { className: 'social-txt' },
                                         'Twitter'
-                                    )
+                                    ),
+                                    _react2.default.createElement('a', { href: 'https://twitter.com/qcollinscode', target: '_blank' })
                                 )
                             ),
                             _react2.default.createElement(
@@ -22886,7 +22850,8 @@ var Home = function (_React$Component) {
                                         'div',
                                         { className: 'social-txt' },
                                         'LinkedIn'
-                                    )
+                                    ),
+                                    _react2.default.createElement('a', { href: '#', target: '_blank' })
                                 )
                             ),
                             _react2.default.createElement(
@@ -22904,7 +22869,8 @@ var Home = function (_React$Component) {
                                         'div',
                                         { className: 'social-txt' },
                                         'Codepen'
-                                    )
+                                    ),
+                                    _react2.default.createElement('a', { href: 'https://codepen.io/qcollinscode', target: '_blank' })
                                 )
                             )
                         )
@@ -22916,14 +22882,14 @@ var Home = function (_React$Component) {
                             _reactBootstrap.Col,
                             { lg: 12, className: 'algn-ctr' },
                             _react2.default.createElement(
-                                'div',
-                                { className: 'button-container' },
+                                'form',
+                                { method: 'get', action: 'Resume.pdf', target: '_blank', className: 'button-container' },
                                 _react2.default.createElement(
                                     'p',
                                     null,
                                     _react2.default.createElement(
                                         _reactBootstrap.Button,
-                                        null,
+                                        { className: 'regBtn', type: 'submit' },
                                         'Resume'
                                     )
                                 )
@@ -23007,7 +22973,9 @@ var Home = function (_React$Component) {
                                             { lg: 8, className: 'col-lg-offset-2' },
                                             _react2.default.createElement(
                                                 _reactBootstrap.Button,
-                                                { type: 'submit', className: 'btn' },
+                                                { type: 'submit', className: 'regBtn', onClick: function onClick(e) {
+                                                        e.preventDefault();
+                                                    } },
                                                 'Send Message ',
                                                 _react2.default.createElement('i', { className: 'fa fa-paper-plane', 'aria-hidden': 'true' })
                                             )
@@ -23032,26 +23000,6 @@ var Home = function (_React$Component) {
             var self = this;
             var accompArr = [self.refs.accompLinesNum, self.refs.accompProjectsNum, self.refs.accompHoursNum, self.refs.accompYearsNum];
 
-            function animateCSS() {
-                var aboutMe = self.refs.aboutMe;
-                var paraquote = self.refs.paraquote;
-                var y = window.pageYOffset;
-                if (y < 311) {
-                    (0, _jquery2.default)(aboutMe).addClass("animated fadeInLeft");
-                } else if (y > 330 && y < 2030) {
-                    (0, _jquery2.default)("#nav02").addClass("animated fadeInRight");
-                } else if (y > 2150 && y < 3705) {
-                    console.log('para');
-                    (0, _jquery2.default)("#paraTextBox").addClass("animated fadeInLeft");
-                } else if (y > 3705 && y < 4156) {
-                    (0, _jquery2.default)(".services-container").addClass("animated fadeInRight");
-                } else if (y > 4256 && y < 5000) {
-                    (0, _jquery2.default)(".social-col").addClass("animated fadeInLeft");
-                } else if (y > 5046) {
-                    (0, _jquery2.default)(".form").addClass("animated fadeInRight");
-                }
-            }
-
             function animateInfoNums() {
                 var y = window.pageYOffset;
                 if (y > 3250) {
@@ -23069,7 +23017,6 @@ var Home = function (_React$Component) {
                     });
                 }
             };
-            (0, _jquery2.default)(window).on('scroll', animateCSS);
             (0, _jquery2.default)(window).on('scroll', animateInfoNums);
         }
     }]);
@@ -32583,6 +32530,13 @@ var HeroImg = function (_React$Component) {
     }
 
     _createClass(HeroImg, [{
+        key: 'onButtonClick',
+        value: function onButtonClick(e) {
+            (0, _jquery2.default)('html, body').animate({
+                scrollTop: (0, _jquery2.default)(".about-section").offset().top - 25
+            }, 1000);
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -32599,14 +32553,14 @@ var HeroImg = function (_React$Component) {
                     _react2.default.createElement(
                         'p',
                         null,
-                        'Full-Stack Web Developer'
+                        'Web Developer'
                     ),
                     _react2.default.createElement(
                         'p',
                         null,
                         _react2.default.createElement(
                             _reactBootstrap.Button,
-                            null,
+                            { className: 'regBtn', onClick: this.onButtonClick.bind(this) },
                             'Learn More'
                         )
                     )
@@ -32700,7 +32654,6 @@ var Navigation = function (_Component) {
             var self = this;
             if (this.refs[elClass]) {
                 var testi = "#" + elClass;
-                console.log((0, _jquery2.default)(testi).offset().top - 25);
                 this.setState({
                     navigation: _defineProperty({}, elClass, true)
                 });
@@ -32709,7 +32662,6 @@ var Navigation = function (_Component) {
                     scrollTop: (0, _jquery2.default)(testi).offset().top - 25
                 }, 1000);
             }
-            // console.log($("#" + "projects"))
         }
     }, {
         key: 'componentWillMount',
@@ -32718,8 +32670,7 @@ var Navigation = function (_Component) {
 
             (0, _jquery2.default)(window).on('scroll', function () {
                 var y = window.pageYOffset;
-                var scrollPos = 3900;
-                if (y < 1164) {
+                if (y < 1199) {
                     if (self.refs.nav01) {
                         //home
                         self.setState({
@@ -32728,7 +32679,7 @@ var Navigation = function (_Component) {
                             }
                         });
                     }
-                } else if (y >= 1194 && y < 3459) {
+                } else if (y >= 1199 && y < 3178) {
                     //projects
                     if (self.refs.nav02) {
                         self.setState({
@@ -32737,7 +32688,7 @@ var Navigation = function (_Component) {
                             }
                         });
                     }
-                } else if (y >= 3459 && y < 4423) {
+                } else if (y >= 3178 && y < 4130) {
                     //skills
                     if (self.refs.nav03) {
                         self.setState({
@@ -32746,7 +32697,7 @@ var Navigation = function (_Component) {
                             }
                         });
                     }
-                } else if (y >= 4423 && y < 5066) {
+                } else if (y >= 4130 && y < 4585) {
                     //Services
                     if (self.refs.nav04) {
                         self.setState({
@@ -32755,21 +32706,12 @@ var Navigation = function (_Component) {
                             }
                         });
                     }
-                } else if (y >= 5066 && y < 5489) {
-                    //Social
+                } else if (y >= 4585 && y < 9000) {
+                    //Contact
                     if (self.refs.nav05) {
                         self.setState({
                             navigation: {
                                 nav05: true
-                            }
-                        });
-                    }
-                } else if (y >= 5489 && y < 5699) {
-                    //resume
-                    if (self.refs.nav06) {
-                        self.setState({
-                            navigation: {
-                                nav06: true
                             }
                         });
                     }
@@ -32783,8 +32725,7 @@ var Navigation = function (_Component) {
                 isSelected02 = this.state.navigation.nav02 ? "nav02 nav-li-selected" : "nav02",
                 isSelected03 = this.state.navigation.nav03 ? "nav03 nav-li-selected" : "nav03",
                 isSelected04 = this.state.navigation.nav04 ? "nav04 nav-li-selected" : "nav04",
-                isSelected05 = this.state.navigation.nav05 ? "nav05 nav-li-selected" : "nav05",
-                isSelected06 = this.state.navigation.nav06 ? "nav06 nav-li-selected" : "nav06";
+                isSelected05 = this.state.navigation.nav05 ? "nav05 nav-li-selected" : "nav05";
             return _react2.default.createElement(
                 _reactBootstrap.Navbar,
                 { fluid: true, inverse: true, fixedTop: true, collapseOnSelect: true },
@@ -32798,10 +32739,10 @@ var Navigation = function (_Component) {
                         _react2.default.createElement(
                             'a',
                             { className: 'logo-a' },
-                            'QCCODE'
+                            'QCOLLINSCODE'
                         )
                     ),
-                    _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
+                    _react2.default.createElement(_reactBootstrap.Navbar.Toggle, { className: 'menuButton' })
                 ),
                 _react2.default.createElement(
                     _reactBootstrap.Navbar.Collapse,
@@ -32832,11 +32773,6 @@ var Navigation = function (_Component) {
                         _react2.default.createElement(
                             _reactBootstrap.NavItem,
                             { className: isSelected05, ref: 'nav05', onClick: this.selectListItem.bind(this) },
-                            'Social'
-                        ),
-                        _react2.default.createElement(
-                            _reactBootstrap.NavItem,
-                            { className: isSelected06, ref: 'nav06', onClick: this.selectListItem.bind(this) },
                             'Contact'
                         )
                     ),
@@ -33114,7 +33050,6 @@ var PrevProjects = function (_Component) {
                 len = Object.keys(obj).length;
             for (var i = 0; i < len; i++) {
                 var objKey = Object.keys(obj)[i];
-                console.log(obj[objKey].style);
                 arr.push(_react2.default.createElement(
                     _reactBootstrap.Col,
                     { key: i, xs: 12, md: 4, lg: 4 },
@@ -36042,22 +35977,12 @@ module.exports = performanceNow;
 module.exports = __webpack_require__.p + "../img/48a47e06b2338b697db2e0a3738d4a26.jpeg";
 
 /***/ }),
-/* 341 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "../img/5467983e55ff3b5dd3ef13fd90c98831.png";
-
-/***/ }),
-/* 342 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "../img/2ab0ee4a11ed1e3c0b63a3332cd026d0.jpg";
-
-/***/ }),
+/* 341 */,
+/* 342 */,
 /* 343 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "../img/e408bfc3db46901d05d3342cf02ca65e.jpg";
+module.exports = __webpack_require__.p + "../img/718762c9b6b6174b32de51c7daeb2197.jpg";
 
 /***/ }),
 /* 344 */
@@ -59853,6 +59778,42 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu
 
 module.exports = __webpack_require__(242);
 
+
+/***/ }),
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */,
+/* 586 */,
+/* 587 */,
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "../img/284e25396b0ea520a34691dc3186cc71.jpg";
+
+/***/ }),
+/* 603 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "../img/24f1553c71fff7651cf3c8c7cb664901.jpg";
 
 /***/ })
 /******/ ]);
