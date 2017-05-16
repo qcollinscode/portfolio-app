@@ -1,5 +1,5 @@
 /***************************
- * Gulp Module Imports
+ * Imports
  **************************/
 import browserSync    from   'browser-sync';
 import babel          from   'gulp-babel';
@@ -29,7 +29,7 @@ class Options {
         this.options(key)
     }
     options (key) {
-        return arguments.length <=0 ? this.obj : this.obj[key];
+        return arguments.length <= 0 ? this.obj : this.obj[key];
     }
 }
 
@@ -49,6 +49,7 @@ const returnFiles  = (root, files) => {
 const
     browsersync                 =   browserSync.create(),
     reload                      =   browserSync.reload,
+    autoprefixerOptions         =   new Options({ browsers: ['last 2 versions'], cascade: false }),
     gulpBabel                   =   new Options({ presets: 'es2015' }),
     gulpRename                  =   new Options({ fileNameCSS: 'main.css', fileNameJS: 'main.js', baseName: 'main', extName: '.js' }),
     gulpImageMinify             =   new Options({ progressive: true, optimizationLevel: 5 });
@@ -105,6 +106,7 @@ gulp.task('css', ['sass'], () => {
     return gulp.src(cssFiles)
         .pipe(plumber())
         .pipe(sourcemaps.init())
+        .pipe(autoprefixer(autoprefixerOptions))
         .pipe(concatCSS(mainCssFile))
         .pipe(minifyCSS())
         .pipe(gulp.dest(cssRoot))

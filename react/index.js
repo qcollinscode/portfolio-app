@@ -8,6 +8,7 @@ import NotFoundPage from './components/NotFoundPage';
 import './../animate/animate.min.css';
 import './style.scss';
 
+
 window.onload = () => {
     ReactDOM.render((
         <Router history={browserHistory} onUpdate={() => window.scrollTo(0, 0)}>

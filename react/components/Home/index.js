@@ -53,7 +53,7 @@ export default class Home extends React.Component {
                 demo: "https://travelingcoders.herokuapp.com/",
                 style: {
                     backgroundImage: 'url(' + travelingcoders + ')',
-                    backgroundSize: 'contain!important',
+                    backgroundSize: 'cover',
                     backgroundPosition: 'top!important',
                     backgroundRepeat: 'no-repeat!important',
                 }
@@ -66,7 +66,7 @@ export default class Home extends React.Component {
                 demo: "https://birdville.herokuapp.com/",
                 style: {
                     backgroundImage: 'url('+ birdville + ')',
-                    backgroundSize: 'contain!important',
+                    backgroundSize: 'cover',
                     backgroundPosition: 'top!important',
                     backgroundRepeat: 'no-repeat!important',
                 }
@@ -79,7 +79,7 @@ export default class Home extends React.Component {
                 demo: "https://jonesty.herokuapp.com/",
                 style: {
                     backgroundImage: 'url(' + jonesty + ')',
-                    backgroundSize: 'contain!important',
+                    backgroundSize: 'cover',
                     backgroundPosition: 'top!important',
                     backgroundRepeat: 'no-repeat!important',
                 },
@@ -92,7 +92,7 @@ export default class Home extends React.Component {
                 demo: "https://eucada-restaurant.herokuapp.com/",
                 style: {
                     backgroundImage: 'url(' + restaurant + ')',
-                    backgroundSize: 'contain!important',
+                    backgroundSize: 'cover',
                     backgroundPosition: 'top!important',
                     backgroundRepeat: 'no-repeat!important',
                 }
@@ -105,7 +105,7 @@ export default class Home extends React.Component {
                 demo: "https://eucada-agency.herokuapp.com/",
                 style: {
                     backgroundImage: 'url('+ agency + ')',
-                    backgroundSize: 'contain!important',
+                    backgroundSize: 'cover',
                     backgroundPosition: 'top!important',
                     backgroundRepeat: 'no-repeat!important',
                 }
@@ -118,13 +118,16 @@ export default class Home extends React.Component {
                 demo: "https://photogallery01.herokuapp.com/",
                 style: {
                     backgroundImage: 'url(' + databaseadmin + ')',
-                    backgroundSize: 'contain!important',
+                    backgroundSize: 'cover',
                     backgroundPosition: 'top!important',
                     backgroundRepeat: 'no-repeat!important',
                 }
             }
             
         }];
+
+        const browserAgent = navigator.userAgent,
+              browserClass = browserAgent.indexOf("Trident") == -1 ? "moz" : "ie"; 
 
         return (
             <div className="home">
@@ -140,11 +143,13 @@ export default class Home extends React.Component {
                         <h1>Projects</h1>
                         <PrevProjectsWeb webProjects={webProjects} />
                     </Grid>
-                    <section className="para01-section">
-                        <div className="textbox" id="paraTextBox">
-                            <p>&#39;&nbsp;Travel as much as you can. As far as you can. As long as you can.<br/>Life’s not meant to be lived in one place. &#39; <br/><span className="arthor">- Traveller</span></p>
-                        </div>
-                    </section>
+                    <div className={browserClass}>
+                        <section className="para01-section">
+                            <div className="textbox" id="paraTextBox">
+                                <p>&#39;&nbsp;Travel as much as you can. As far as you can. As long as you can.<br/>Life’s not meant to be lived in one place. &#39; <br/><span className="arthor">- Traveller</span></p>
+                            </div>
+                        </section>
+                    </div>
                     <Grid fluid componentClass="section" id="nav03" className="tech-section">
                         <h1>Current Skills</h1>
                         <SkillsSlider/>

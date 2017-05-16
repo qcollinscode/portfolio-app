@@ -23,10 +23,10 @@ export default class Navigation extends Component {
 
 
     selectListItem(e) {
-        var elClass = e.target.parentElement.classList[0];
+        const event = e || window.event;
+        var elClass = event.target.parentElement.classList[0];
         const self = this;
         if(this.refs[elClass]) {
-            const testi = "#" + elClass;
             this.setState({
                 navigation:{
                     [elClass]: true
@@ -34,16 +34,20 @@ export default class Navigation extends Component {
             });
 
             $('html, body').animate({
-                scrollTop: $(testi).offset().top - 25
+                scrollTop: document.getElementById(elClass).offsetTop - 25
             }, 1000);
         }
     }
 
     componentWillMount() {
         const self = this;
-
-        $(window).on('scroll', function() {
-            var y = window.pageYOffset;
+        // var y = document.documentElement.scrollTop;
+        //     console.log(y)
+        $(window).scroll(function() {
+            console.log("hello")
+            // var y = window.pageYOffset;
+            var y = $(this).scrollTop();
+            console.log(y)
             if (y < 1199) {
                 if(self.refs.nav01) { //home
                     self.setState({

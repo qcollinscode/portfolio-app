@@ -1,6 +1,12 @@
-const path = require('path'),
-    webpack = require('webpack'),
-    ExtractTextPlugin = require('extract-text-webpack-plugin');
+/**
+ * Imports
+ */
+
+const path                  = require('path'),
+      webpack               = require('webpack'),
+      ExtractTextPlugin     = require('extract-text-webpack-plugin');
+
+
 module.exports = {
     entry: {
         main: [
@@ -17,6 +23,10 @@ module.exports = {
     },
     module: {
       loaders: [
+
+          /**
+           * Javascript
+           */
         {
             test: /\.js$/,
             exclude: /(node_modules|bower_components)/,
@@ -25,6 +35,10 @@ module.exports = {
                 presets: ['react', 'es2015']
             }
         },
+
+        /**
+         * SASS
+         */
         {
             test: /\.scss$/,
             loader: ExtractTextPlugin.extract({
@@ -32,6 +46,10 @@ module.exports = {
                 use: "css-loader!sass-loader",
             })
         },
+
+        /**
+         * CSS
+         */
         {
             test: /\.css$/,
             loader: ExtractTextPlugin.extract({
@@ -39,6 +57,11 @@ module.exports = {
                 use: "css-loader",
             })
         },
+
+        /**
+         * Images
+         */
+
         {
             test: /\.(jpe?g|png|gif)$/i,
             loaders: [
@@ -63,10 +86,11 @@ module.exports = {
                 }
             ]
         },
-        // {
-        //         test: /\.(otf|eot|svg|ttf|woff|woff2)$/,
-        //         loader: 'file-loader?name=../fonts/[name].[ext]'
-        // },
+
+        /**
+         * Fonts
+         */
+
         {
             test: /\.(woff|woff2|eot|ttf|svg|otf)$/,
             loader: 'url-loader?limit=400000&name=../fonts/[name].[ext]'

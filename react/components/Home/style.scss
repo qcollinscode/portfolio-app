@@ -81,7 +81,7 @@
     justify-content: center;
     flex-direction: column;
     color: lightgrey;
-    font-family: 'Sketch'!important;
+    font-family: 'Sketch', 'open sans', arial!important;
     font-size: 2.8em;
     @include bp-small {
         font-size: 2.1em;
@@ -104,10 +104,19 @@
     z-index: -1;
 }
 
+.textbox {
+    height: 100%;
+}
+
+.ie > .para01-section > .textbox > p {
+    font-size: 1em;
+}
+
 .para01-section > .textbox > p {
     color: lightgrey;
     font-size: 1.3em;
-    font-family: 'Sketch'!important;
+    font-family: 'Sketch', 'open sans', arial!important;
+    font-style: italic;
 }
 
 .para01-section .textbox .arthor {
