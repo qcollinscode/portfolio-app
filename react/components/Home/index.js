@@ -47,7 +47,7 @@ export default class Home extends React.Component {
         const webProjects = [{
             app01: {
                 title: "Traveling Coders",
-                tech: "HTML5, SASS, Javascript, PHP, MySQL, SQL, and ReactJS",
+                tech: "HTML5, SASS, Javascript, and PHP",
                 info: "A travel blog",
                 github: "https://github.com/qcollinscode/traveling-coders",
                 demo: "https://travelingcoders.herokuapp.com/",
@@ -73,7 +73,7 @@ export default class Home extends React.Component {
             },
             app03: {
                 title: "Jonesty",
-                tech: "HTML5, SASS, Javascript, EJS, NodeJS, MongoDB, Mongoose, ExpressJS, and ReactJS",
+                tech: "HTML5, SASS, Javascript, EJS, NodeJS, and ExpressJS",
                 info: "An ecommerce app",
                 github: "https://github.com/qcollinscode/jonesty-app",
                 demo: "https://jonesty.herokuapp.com/",
