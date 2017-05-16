@@ -134,7 +134,7 @@ export default class Home extends React.Component {
                 </div>
                 <HeroImg />
                     <Grid fluid componentClass="section" className="about-section">
-                        <p className="about-section-headtext" ref="aboutMe">Hi, my name is Quarterious Collins, and I'm a web developer. When I'm not fishing or gaming, I'm creating cool things on the internet. My passion is making the web a more accessible and faster place for businesses and individuals who need an online presence. I'm available for freelance work. If you'd like to get in touch, you can email me at <a href="mailto:contact@qcollinscode.com" target="_top">contact@qcollinscode.com</a></p>
+                        <p className="about-section-headtext" ref="aboutMe">Hi, my name is Quarterious Collins, and I'm a web developer. When I'm not fishing or gaming, I'm creating cool things on the internet. My passion is making the web a more accessible and faster place for businesses and individuals who need an online presence. I'm available for freelance work. If you'd like to get in touch, you can email me at <a href="mailto:work@qcollinscode.com" target="_top">work@qcollinscode.com</a></p>
                     </Grid>
                     <Grid componentClass="section" id="nav02" ref="webprojects" className="recentProjects-section">
                         <h1>Projects</h1>
@@ -226,7 +226,7 @@ export default class Home extends React.Component {
                                 <div className="social-container">
                                     <div className="social-pic"><img className="img-responsive" src={linkedIn}></img></div>
                                     <div className="social-txt">LinkedIn</div>
-                                    <a href="#" target="_blank"></a>
+                                    <a href="https://www.linkedin.com/in/qcollinscode" target="_blank"></a>
                                 </div>
                             </Col>
                             <Col className="social-col" xs={12} sm={6} lg={4}>

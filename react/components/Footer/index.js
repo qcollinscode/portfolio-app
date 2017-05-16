@@ -9,7 +9,7 @@ export default class Footer extends Component {
                     <div className="footer">
                         <Row className="footer-header">
                             <Col sm={12} lg={12} className="footer-header-txt-container">
-                                <div className="email"><h1>contact@qcollinscode.com</h1></div>
+                                <div className="email"><h1>work@qcollinscode.com</h1></div>
                             </Col>
                         </Row>
                         <Row className="footer-footer">

@@ -16,7 +16,7 @@ export default class HeroImg extends React.Component {
         return (
             <Jumbotron className="heroImg">
                 <div className="heroImg-text-container" ref="heroImgContainer">
-                    <h1> Q Collins </h1>
+                    <h1> Q. Collins </h1>
                     <p>Web Developer</p>
                     <p><Button className="regBtn" onClick={this.onButtonClick.bind(this)}>Learn More</Button></p>
                 </div>

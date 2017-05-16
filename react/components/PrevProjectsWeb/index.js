@@ -39,8 +39,8 @@ export default class PrevProjects extends Component {
                                 <h2 className="tp">{obj[objKey].title}</h2>
                                 <h4 className="tp">{obj[objKey].tech}</h4>
                                 <p className="tp">{obj[objKey].info}</p>
-                                <p className="tp"><Button className="btn1" href={obj[objKey].github}>Github&nbsp;<i className="fa fa-github" style={{fontSize:'1.2em'}}></i></Button></p>
-                                <p className="tp"><Button className="btn2" href={obj[objKey].demo}>Demo&nbsp;<i className="fa fa-desktop" style={{fontSize:'1em'}}></i></Button></p>
+                                <p className="tp"><Button className="btn1" href={obj[objKey].github} target="_blank">Github&nbsp;<i className="fa fa-github" style={{fontSize:'1.2em'}}></i></Button></p>
+                                <p className="tp"><Button className="btn2" href={obj[objKey].demo} target="_blank">Demo&nbsp;<i className="fa fa-desktop" style={{fontSize:'1em'}}></i></Button></p>
                             </figure>
                         </div>
                     </section>
