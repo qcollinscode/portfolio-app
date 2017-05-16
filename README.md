@@ -1,3 +1,3 @@
-# Project Q
+# Portfolio
 
 ### [Live Demo](http://www.qcollinscode.com)
