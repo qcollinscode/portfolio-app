@@ -108,7 +108,7 @@ export default class Navigation extends Component {
                 <div></div>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a className="logo-a">QCOLLINSCODE</a>
+                        <a className="logo-a">QCCODE</a>
                     </Navbar.Brand>
                     <Navbar.Toggle className="menuButton"/>
                 </Navbar.Header>

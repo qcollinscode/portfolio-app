@@ -1,3 +1,9 @@
+@mixin bp-small {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
@@ -49,12 +55,12 @@ a[role="button"],a[role="button"]:focus, a[role="button"]:active {
     letter-spacing: 0.05em;
     font-family: "HarabaraMais";
     .logo-a {
+
         .grn {
             color: green!important;
         }
     }
 }
-
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:active, .navbar-inverse .navbar-brand:focus {
     color: lightgrey;
@@ -68,7 +74,7 @@ a[role="button"],a[role="button"]:focus, a[role="button"]:active {
     }
 }
 
-@media (max-width: 1410px) {
+@media (max-width: 930px) {
   .navbar-header {
     float: none;
   }
