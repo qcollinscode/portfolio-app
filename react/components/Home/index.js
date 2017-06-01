@@ -245,7 +245,7 @@ export default class Home extends React.Component {
                     </Grid>
                     <section className="resume" id="nav06">
                         <Col lg={12} className="algn-ctr">
-                            <form method="get" action="newresume.pdf" target="_blank" className="button-container">
+                            <form method="get" action="Resume.pdf" target="_blank" className="button-container">
                                 <p><Button className="regBtn" type="submit">Resume</Button></p>
                             </form>
                         </Col>
